@@ -3,7 +3,6 @@ import { Component } from 'react';
 class IconAside extends Component {
   handleOnClick = () => {
     const { name, history } = this.props;
-    console.log(history);
 
     name === 'home' ? history.push('/') : history.push(`/${name}`);
   };

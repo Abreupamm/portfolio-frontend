@@ -7,7 +7,7 @@ class ProjectsFrontend extends Component {
   render() {
     const { history } = this.props;
     return (
-      <div className="projects-page">
+      <div className="projects-front">
         <Title title="PROJETOS FRONTEND" />
         <Aside history={history} position="left" />
       </div>
