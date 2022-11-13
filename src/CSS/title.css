@@ -1,0 +1,15 @@
+.title-pages {
+  position: absolute;
+  margin: 0;
+  top: 10px;
+  right: 100px;
+  font-family: 'Nunito';
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100px;
+  background: linear-gradient(180deg, #5E0080 35%, #A700C2 43.75%, #FF00E5 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

@@ -3,8 +3,9 @@ import '../CSS/aside.css';
 
 class Aside extends Component {
   render() {
+    const { position } = this.props;
     return(
-      <div className="aside"/>
+      <div className={ `aside ${position}` }/>
     );
   }
 }

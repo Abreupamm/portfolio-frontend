@@ -16,7 +16,7 @@ class Home extends Component {
           <button onClick={ this.handleOnClick } className='button-about'>SOBRE MIM</button>
         </div>
         <div className='container-img'>
-          <Aside/>
+          <Aside position='rigth'/>
         </div>
       </div>
     );

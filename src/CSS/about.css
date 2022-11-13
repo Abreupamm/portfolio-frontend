@@ -1,0 +1,16 @@
+.about-page {
+  min-height: 100Vh;
+  background-color: #000;
+}
+
+p {
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 10% auto;
+  color: #ded5df;;
+  width: 80%;
+  font-size: 20px;
+  line-height: 30px;
+}
