@@ -2,9 +2,9 @@ import { Component } from "react";
 
 class IconAside extends Component {
   render() {
-    const { url } = this.props;
+    const { url, name } = this.props;
     return (
-      <input type='img' src={ url }/>        
+      <input alt={ name } type='image' src={ url }/>        
     );
   }
 }

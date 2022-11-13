@@ -6,9 +6,9 @@ import '../CSS/about.css';
 class AboutMe extends Component {
   render() {
     return (
-      <div className="about-page">
-        <Title title="SOBRE MIM" />
-        <Aside position="left" />
+      <div className='about-page'>
+        <Title title='SOBRE MIM' />
+        <Aside position='left' />
         <p>
           Me apaixonei por tecnologia assim que tive o primeiro contato com
           programação em 2021, decidi estudar desenvolvimento web e foi a melhor
