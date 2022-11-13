@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import '../CSS/home.css';
+import Aside from '../components/Aside';
 
 class Home extends Component {
   render() {
@@ -10,7 +11,9 @@ class Home extends Component {
           <h3 className='sub-title'>Full Stack Developer</h3>
           <button className='button-about'>SOBRE MIM</button>
         </div>
-        <div className='container-img'/>
+        <div className='container-img'>
+          <Aside/>
+        </div>
       </div>
     );
   }
