@@ -1,0 +1,19 @@
+.links-redes {
+  height: 80px;
+  width: 80px;
+}
+
+.links-redes:hover {
+  height: 83px;
+  width: 83px;
+}
+
+.container-links-redes {
+  display: flex;
+  position: absolute;
+  left: 200px;
+  bottom: 60px;
+  width: 220px;
+  height: 100px;
+  justify-content: space-between;
+}

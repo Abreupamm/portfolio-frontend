@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import '../CSS/aside.css';
+import '../CSS/components/aside.css';
 import IconAside from './IconAside';
 import iconHome from '../images/home.png';
 import iconAbout from '../images/do-utilizador.png';

@@ -1,17 +1,10 @@
 import { Component } from 'react';
 import Aside from '../components/Aside';
 import Title from '../components/Title';
-import '../CSS/about.css';
-import iconGitHub from '../images/github.png';
-import iconLinkedin from '../images/linkedin.png';
+import Links from '../components/Links';
+import '../CSS/pages/about.css';
 
 class AboutMe extends Component {
-  handleOnClick = ({ target: { alt } }) => {
-    alt === 'icon github'
-      ? (window.location.replace('https://github.com/Abreupamm'))
-      : (window.location.replace('https://www.linkedin.com/in/pamela-silva-de-abreu/'));
-  };
-
   render() {
     const { history } = this.props;
     return (
@@ -28,8 +21,7 @@ class AboutMe extends Component {
           vez mais meus conhecimentos técnicos e pronta para conseguir impactar
           cada vez mais vidas e rotinas utilizando a programação!
         </p>
-        <input type="image" alt="icon github" src={iconGitHub} onClick={this.handleOnClick}/>
-        <input type="image" alt="icon linkedin" src={iconLinkedin} onClick={this.handleOnClick}/>
+        <Links/>
       </div>
     );
   }
