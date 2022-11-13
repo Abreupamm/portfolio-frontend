@@ -1,15 +1,16 @@
 import { Component } from 'react';
+import '../CSS/home.css';
 
 class Home extends Component {
   render() {
     return (
-      <div>
-        <div>
-          <h1>Pamela Abreu</h1>
-          <h3>Full Stack Developer</h3>
-          <button>SOBRE MIM</button>
+      <div className='home-page'>
+        <div className='container-name'>
+          <h1 className='name'>Pamela Abreu</h1>
+          <h3 className='sub-title'>Full Stack Developer</h3>
+          <button className='button-about'>SOBRE MIM</button>
         </div>
-        <div/>
+        <div className='container-img'/>
       </div>
     );
   }
