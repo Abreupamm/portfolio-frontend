@@ -9,7 +9,7 @@ class IconAside extends Component {
   };
 
   render() {
-    const { urlIcon, name,  } = this.props;
+    const { urlIcon, name } = this.props;
     return (
       <div className="container-icon">
         <input

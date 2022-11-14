@@ -1,7 +1,9 @@
 import { Component } from 'react';
+import '../CSS/pages/projectspage.css';
 import Aside from '../components/Aside';
 import Title from '../components/Title';
-import '../CSS/pages/projectspage.css';
+import ProjectsCard from '../components/ProjectsCard';
+import data from '../utils/projectsList';
 
 class ProjectsBackend extends Component {
   render() {
@@ -10,6 +12,12 @@ class ProjectsBackend extends Component {
       <div className="projects-back">
         <Title title="PROJETOS BACKEND" />
         <Aside history={history} />
+        <div className="container-projects-cards">
+          {data.map(
+            (project) =>
+              project.category === 'back' && <ProjectsCard data={project} />
+          )}
+        </div>
       </div>
     );
   }
