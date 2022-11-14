@@ -1,4 +1,4 @@
-.projects-front {
+.projects-front, .projects-back {
   min-height: 100vh;
   background-color: #000;
 }

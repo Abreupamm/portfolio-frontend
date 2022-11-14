@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import Aside from '../components/Aside';
 import Title from '../components/Title';
-import '../CSS/pages/frontpage.css';
+import '../CSS/pages/projectspage.css';
 
 class ProjectsFrontend extends Component {
   render() {

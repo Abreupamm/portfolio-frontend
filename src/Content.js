@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import ProjectsFrontend from './pages/ProjectsFrontend';
+import ProjectsBackend from './pages/ProjectsBackend';
 import NotFound from './pages/NotFound';
 import './CSS/index.css';
 
@@ -14,6 +15,7 @@ class Content extends Component {
           <Route exact path="/" component={Home} />
           <Route path="/about-me" component={AboutMe} />
           <Route path="/projects-frontend" component={ProjectsFrontend} />
+          <Route path="/projects-backend" component={ProjectsBackend} />
           <Route exact path="*" component={ NotFound } />
         </Switch>
       </main>
