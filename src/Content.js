@@ -4,8 +4,8 @@ import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import ProjectsFrontend from './pages/ProjectsFrontend';
 import ProjectsBackend from './pages/ProjectsBackend';
+import Contact from './pages/Contacts';
 import NotFound from './pages/NotFound';
-import './CSS/index.css';
 
 class Content extends Component {
   render() {
@@ -16,6 +16,7 @@ class Content extends Component {
           <Route path="/about-me" component={AboutMe} />
           <Route path="/projects-frontend" component={ProjectsFrontend} />
           <Route path="/projects-backend" component={ProjectsBackend} />
+          <Route path="/contact" component={Contact} />
           <Route exact path="*" component={ NotFound } />
         </Switch>
       </main>
