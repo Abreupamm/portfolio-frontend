@@ -5,9 +5,10 @@ import AboutMe from './pages/AboutMe';
 import ProjectsFrontend from './pages/ProjectsFrontend';
 import ProjectsBackend from './pages/ProjectsBackend';
 import Contact from './pages/Contacts';
+import ProjectsDetails from './pages/ProjectDetails';
 import NotFound from './pages/NotFound';
 
-class Content extends Component {
+class AppRouter extends Component {
   render() {
     return (
       <main>
@@ -17,6 +18,7 @@ class Content extends Component {
           <Route path="/projects-frontend" component={ProjectsFrontend} />
           <Route path="/projects-backend" component={ProjectsBackend} />
           <Route path="/contact" component={Contact} />
+          <Route path="/projects-details/:id" component={ProjectsDetails} />
           <Route exact path="*" component={ NotFound } />
         </Switch>
       </main>
@@ -24,4 +26,4 @@ class Content extends Component {
   }
 }
 
-export default Content;
+export default AppRouter;

@@ -15,7 +15,7 @@ class ProjectsBackend extends Component {
         <div className="container-projects-cards">
           {data.map(
             (project) =>
-              project.category === 'back' && <ProjectsCard data={project} />
+              project.category === 'back' && <ProjectsCard history={history} data={project} />
           )}
         </div>
       </div>

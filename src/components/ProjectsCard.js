@@ -2,15 +2,15 @@ import { Component } from 'react';
 import '../CSS/components/projectsCard.css';
 
 class ProjectsCard extends Component {
-  // handleOnClick = () => {
-  //   const { history } = this.props;
-
-  // }
+  handleOnClick = () => {
+    const { history, data: {id} } = this.props;
+    history.push(`projects-details/${id}`)
+  }
 
   createdBackgoundImage = (url) => ({
     backgroundImage: `url(${url})`,
     backgroundRepeat: 'no-repeat',
-    backgroundSize: '200%',
+    backgroundSize: '100%',
     backgroundPosition: 'center',
   });
 
@@ -23,7 +23,7 @@ class ProjectsCard extends Component {
     return (
       <div style={style} className="container-projects">
         <div className="div-button">
-          <button>Detalhes</button>
+          <button onClick={this.handleOnClick} >Detalhes</button>
         </div>
         <span>{name}</span>
       </div>
