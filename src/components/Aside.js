@@ -9,37 +9,42 @@ import iconCont from '../images/enviar-correio.png';
 
 class Aside extends Component {
   render() {
-    const { position, history } = this.props;
+    const { history } = this.props;
     return (
-      <div className={`aside ${position}`}>
+      <div className="aside">
         <IconAside
           className="icon-home"
-          name="home"
-          url={iconHome}
+          page="home"
+          name="Início"
+          urlIcon={iconHome}
           history={history}
         />
         <IconAside
           className="icon-about"
-          name="about-me"
-          url={iconAbout}
+          page="about-me"
+          name="Sobre Mim"
+          urlIcon={iconAbout}
           history={history}
         />
         <IconAside
           className="icon-front"
-          name="projects-frontend"
-          url={iconFront}
+          page="projects-frontend"
+          name="Projetos FrontEnd"
+          urlIcon={iconFront}
           history={history}
         />
         <IconAside
           className="icon-back"
-          name="projects-backend"
-          url={iconBack}
+          page="projects-backend"
+          name="Projetos BackEnd"
+          urlIcon={iconBack}
           history={history}
         />
         <IconAside
           className="icon-contact"
-          name="contact"
-          url={iconCont}
+          page="contact"
+          name="Contato"
+          urlIcon={iconCont}
           history={history}
         />
       </div>

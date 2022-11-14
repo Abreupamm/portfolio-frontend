@@ -9,7 +9,7 @@ class ProjectsFrontend extends Component {
     return (
       <div className="projects-front">
         <Title title="PROJETOS FRONTEND" />
-        <Aside history={history} position="left" />
+        <Aside history={history} />
       </div>
     );
   }

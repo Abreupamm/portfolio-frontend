@@ -3,20 +3,20 @@ import '../CSS/components/aside.css';
 
 class IconAside extends Component {
   handleOnClick = () => {
-    const { name, history } = this.props;
+    const { page, history } = this.props;
 
-    name === 'home' ? history.push('/') : history.push(`/${name}`);
+    page === 'home' ? history.push('/') : history.push(`/${page}`);
   };
 
   render() {
-    const { url, name } = this.props;
+    const { urlIcon, name,  } = this.props;
     return (
       <div className="container-icon">
         <input
           className="icon"
           alt={name}
           type="image"
-          src={url}
+          src={urlIcon}
           onClick={this.handleOnClick}
         />
         <span className="description">{name}</span>
