@@ -1,4 +1,4 @@
-export const getStaksImage = {
+export const getStacksImage = {
   javascript: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png',
   html: 'https://cdn-icons-png.flaticon.com/512/5968/5968267.png',
   css: 'https://cdn-icons-png.flaticon.com/512/5968/5968242.png',

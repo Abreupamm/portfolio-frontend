@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import Aside from '../components/Aside';
 import Title from '../components/Title';
+import IconStacks from '../components/IconStacks';
 import data from '../utils/projectsList';
 import LanguageProgress from '../components/LanguageProgress';
 import { fetchLanguageProgress } from '../utils/fetchProjects';
@@ -66,24 +67,28 @@ class ProjectsDetails extends Component {
   render() {
     const { history } = this.props;
 
-    const { keys, values, name, gif, description, skills } = this.state;
+    const { keys, values, name, gif, description, urlApication, skills, category, stacks } = this.state;
     return (
       <div className="container-datails">
         <Title title={name} />
         <Aside history={history} />
-        <div className='container-left'>
-          {gif !== '' && <img src={gif} alt={`gif da aplicação ${name}`} />}
+        <div className="container-left">
+          {category === 'front' ? (
+            <img src={gif} alt={`gif da aplicação ${name}`} />
+          ) : (
+            <IconStacks stacks={stacks} />
+          )}
           <span className="skills">{`Habilidades: ${skills}`}</span>
         </div>
-        <div className='container-right'>
+        <div className="container-right">
           <p>{description}</p>
           <div className="div-buttons">
             <button onClick={this.handleOnClick} name="code">
               Ver Código
             </button>
-            <button onClick={this.handleOnClick} name="application">
+           { urlApication !== '' && <button onClick={this.handleOnClick} name="application">
               Ver Aplicação
-            </button>
+            </button>}
           </div>
           <div className="div-progress">
             {keys.map((key, index) => (
