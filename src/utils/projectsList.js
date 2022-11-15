@@ -12,6 +12,7 @@ const data = [
   {
     id: 1,
     name: 'Pixels Art',
+    projectName: 'pixels-art',
     image: 'https://i.pinimg.com/originals/60/96/24/60962403310debc750aefcff61e075a5.jpg',
     urlGitHub: 'https://github.com/Abreupamm/project-pixels-art',
     urlApication: 'https://abreupamm.github.io/project-pixels-art/',
