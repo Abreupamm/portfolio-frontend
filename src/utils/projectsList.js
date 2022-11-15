@@ -45,7 +45,7 @@ const data = [
     urlApication: '',
     description: 'Este projeto foi desenvolvido utilizando o banco de dados MongoDB, a ideia era trabalhar com alguns dados do cardápio do McDonalds: ingredientes, valores nutricionais e dados fictícios de vendas. O desafio proposto era alterar documentos utilizando métodos de update com operadores simples, complexos e modificadores.',
     stacks: ['mongodb', 'docker'],
-    skills: 'Construir queries e expressões complexas utilizando índices textuais e expressões regulares, fazendo buscas, alterações, e deletando informações do banco de dados.',
+    skills: 'Subir o banco usando docker e construir queries para fazer buscas, alterações, e deletar informações do banco de dados.',
     category: 'back',
   },
 ];
