@@ -1,5 +1,6 @@
 .container-progress {
   margin-left: 25px;
+  max-width: 200px;
 }
 
 .container-progress span, .container-progress strong {
@@ -11,7 +12,6 @@
   margin-top: -10;
   font-size: 15px;
   font-weight: 600;
-
 }
 .container-progress strong {
   font-size: 20px;

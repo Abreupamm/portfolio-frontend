@@ -2,6 +2,7 @@ import { Component } from 'react';
 import Aside from '../components/Aside';
 import Title from '../components/Title';
 import IconStacks from '../components/IconStacks';
+import Loading from '../components/Loading';
 import data from '../utils/projectsList';
 import LanguageProgress from '../components/LanguageProgress';
 import { fetchLanguageProgress } from '../utils/fetchProjects';
@@ -9,6 +10,7 @@ import '../CSS/pages/projectDetails.css';
 
 class ProjectsDetails extends Component {
   state = {
+    loading: false,
     values: [],
     keys: [],
   };
@@ -21,10 +23,12 @@ class ProjectsDetails extends Component {
       ((value / calc) * 100).toFixed()
     );
     const keys = Object.keys(getProgress);
+    this.setState({ loading: false });
     this.setState({ keys, values });
   };
 
   componentDidMount = async () => {
+    this.setState({ loading: true });
     const {
       match: {
         params: { id },
@@ -41,6 +45,7 @@ class ProjectsDetails extends Component {
       urlGitHub,
       stacks,
       skills,
+      category,
     } = projectData[0];
 
     this.setState({
@@ -51,6 +56,7 @@ class ProjectsDetails extends Component {
       urlApication,
       urlGitHub,
       stacks,
+      category,
       skills,
     });
 
@@ -67,28 +73,51 @@ class ProjectsDetails extends Component {
   render() {
     const { history } = this.props;
 
-    const { keys, values, name, gif, description, urlApication, skills, category, stacks } = this.state;
+    const {
+      loading,
+      keys,
+      values,
+      name,
+      gif,
+      description,
+      urlApication,
+      skills,
+      category,
+      stacks,
+    } = this.state;
+
+    if (loading) {
+      return (
+        <div className="container-datails">
+          <Loading />
+        </div>
+      );
+    }
+
     return (
       <div className="container-datails">
         <Title title={name} />
         <Aside history={history} />
+
         <div className="container-left">
-          {category === 'front' ? (
+          {category === 'front' && (
             <img src={gif} alt={`gif da aplicação ${name}`} />
-          ) : (
-            <IconStacks stacks={stacks} />
           )}
+          {category === 'back' && <IconStacks stacks={stacks} />}
           <span className="skills">{`Habilidades: ${skills}`}</span>
         </div>
+
         <div className="container-right">
           <p>{description}</p>
           <div className="div-buttons">
             <button onClick={this.handleOnClick} name="code">
               Ver Código
             </button>
-           { urlApication !== '' && <button onClick={this.handleOnClick} name="application">
-              Ver Aplicação
-            </button>}
+            {urlApication !== '' && (
+              <button onClick={this.handleOnClick} name="application">
+                Ver Aplicação
+              </button>
+            )}
           </div>
           <div className="div-progress">
             {keys.map((key, index) => (
