@@ -45,7 +45,7 @@ class ProjectsDetails extends Component {
       <div className='container-datails'>
         <Title title={name} />
         <Aside history={history} />
-        <div>
+        <div className='div-progress'>
           {keys.map((key, index) => (
             <LanguageProgress tec={key} value={values[index]} />
           ))}
