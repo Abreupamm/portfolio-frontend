@@ -29,7 +29,7 @@
   flex-direction: row-reverse;
   width: 70%;
   justify-content: space-between;
-  margin: 10% auto;
+  margin: 10px auto;
 }
 
 .container-datails img {
@@ -79,7 +79,7 @@
 .container-right .div-buttons {
   display: flex;
   align-items: center;
-  margin: 15% auto;
+  margin: 15% auto 0 auto;
   justify-content: space-between;
   width: 350px;
   height: 100px;

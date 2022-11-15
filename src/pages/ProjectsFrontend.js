@@ -4,10 +4,29 @@ import Title from '../components/Title';
 import ProjectsCard from '../components/ProjectsCard';
 import data from '../utils/projectsList';
 import '../CSS/pages/projectspage.css';
+import Loading from '../components/Loading';
 
 class ProjectsFrontend extends Component {
+  state = { loading: true };
+
+  componentDidMount = () => {
+    setTimeout(() => {
+      this.setState({loading: false})
+    }, 1500);
+  };
+  
   render() {
     const { history } = this.props;
+    const { loading } = this.state;
+    
+    if (loading) {
+      return (
+        <div className="container-datails">
+          <Loading />
+        </div>
+      );
+    }
+
     return (
       <div className="projects-front">
         <Title title="PROJETOS FRONTEND" />
