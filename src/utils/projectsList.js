@@ -14,11 +14,12 @@ const data = [
     name: 'Pixels Art',
     projectName: 'pixels-art',
     image: 'https://i.pinimg.com/originals/60/96/24/60962403310debc750aefcff61e075a5.jpg',
+    gif: 'https://github.com/Abreupamm/project-pixels-art/raw/pamela-abreu-pixels-art/pixel-art.gif',
     urlGitHub: 'https://github.com/Abreupamm/project-pixels-art',
     urlApication: 'https://abreupamm.github.io/project-pixels-art/',
     description: 'O Pixel-Art é uma página web que contém uma paleta de cores funcional que poderá ser utilizada para criar desenhos em pixels.',
     stacks: ['javascript', 'css', 'html'],
-    skills: 'Manipula o DOM e eventos com javascript',
+    skills: 'Manipular o DOM e eventos com javascript',
     category: 'front',
   },
 ];

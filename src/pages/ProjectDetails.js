@@ -8,7 +8,6 @@ import '../CSS/pages/projectDetails.css';
 
 class ProjectsDetails extends Component {
   state = {
-    name: '',
     values: [],
     keys: [],
   };
@@ -32,20 +31,56 @@ class ProjectsDetails extends Component {
     } = this.props;
 
     const projectData = data.filter((project) => project.id === JSON.parse(id));
-    const { name, projectName } = projectData[0];
-    this.setState({ name, projectName });
+    const {
+      name,
+      projectName,
+      gif,
+      description,
+      urlApication,
+      urlGitHub,
+      stacks,
+      skills,
+    } = projectData[0];
+
+    this.setState({
+      name,
+      projectName,
+      gif,
+      description,
+      urlApication,
+      urlGitHub,
+      stacks,
+      skills,
+    });
+
     await this.createCalcProgress(projectName);
+  };
+
+  handleOnClick = ({ target }) => {
+    let url;
+    const { urlGitHub, urlApication } = this.state;
+    target.name === 'code' ? (url = urlGitHub) : (url = urlApication);
+    window.location.replace(url);
   };
 
   render() {
     const { history } = this.props;
 
-    const { keys, values, name } = this.state;
+    const { keys, values, name, gif, description, skills } = this.state;
     return (
-      <div className='container-datails'>
+      <div className="container-datails">
         <Title title={name} />
         <Aside history={history} />
-        <div className='div-progress'>
+        {gif !== '' && <img src={gif} alt={`gif da aplicação ${name}`} />}
+        <p>{description}</p>
+        <span>{`Habilidades: ${skills}`}</span>
+        <button onClick={this.handleOnClick} name="code">
+          Ver Código
+        </button>
+        <button onClick={this.handleOnClick} name="application">
+          Ver Aplicação
+        </button>
+        <div className="div-progress">
           {keys.map((key, index) => (
             <LanguageProgress tec={key} value={values[index]} />
           ))}
