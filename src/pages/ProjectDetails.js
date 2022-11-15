@@ -4,6 +4,7 @@ import Title from '../components/Title';
 import data from '../utils/projectsList';
 import LanguageProgress from '../components/LanguageProgress';
 import { fetchLanguageProgress } from '../utils/fetchProjects';
+import '../CSS/pages/projectDetails.css';
 
 class ProjectsDetails extends Component {
   state = {
@@ -41,7 +42,7 @@ class ProjectsDetails extends Component {
 
     const { keys, values, name } = this.state;
     return (
-      <div>
+      <div className='container-datails'>
         <Title title={name} />
         <Aside history={history} />
         <div>

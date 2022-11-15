@@ -1,11 +1,18 @@
 .container-progress {
-  width: 150px;
+  width: 100px;
+}
+
+.container-progress span, .container-progress strong {
+  color: #ded5df;
+  font-family: 'Nunito', sans-serif;
 }
 
 .container-progress span {
   margin-top: -10;
-  font-size: 20px;
+  font-size: 15px;
+  font-weight: 600;
+
 }
 .container-progress strong {
-  font-size: 35px;
+  font-size: 20px;
 }

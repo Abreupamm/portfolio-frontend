@@ -18,11 +18,11 @@ class LanguageProgress extends Component {
     const { tec } = this.props;
     const styleProgressBar = {
       path: {
-        stroke: `rgba(62, 152, 199, ${valueStart / 100})`,
+        stroke: `rgba(167, 0, 194, 100%)`,
         transition: 'stroke-dashoffset 0.9s ease 0s',
       },
       trail: {
-        stroke: '#d6d6d6',
+        stroke: 'rgb(245, 122, 233, 15%)',
       },
       background: {
         fill: '#3e98c7',
