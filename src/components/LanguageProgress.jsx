@@ -8,13 +8,14 @@ class LanguageProgress extends Component {
     valueStart: 0,
   };
   componentDidMount = () => {
+    const { value } = this.props;
     setTimeout(() => {
-      this.setState({ valueStart: 66 });
+      this.setState({ valueStart: value });
     }, '1100');
   };
   render() {
     const { valueStart } = this.state;
-
+    const { tec } = this.props;
     const styleProgressBar = {
       path: {
         stroke: `rgba(62, 152, 199, ${valueStart / 100})`,
@@ -29,13 +30,13 @@ class LanguageProgress extends Component {
     };
 
     return (
-      <div className='container-progress'>
+      <div className="container-progress">
         <CircularProgressbarWithChildren
           styles={styleProgressBar}
           value={valueStart}
         >
           <strong>{`${valueStart}%`}</strong>
-          <span>test</span>
+          <span>{tec}</span>
         </CircularProgressbarWithChildren>
       </div>
     );
