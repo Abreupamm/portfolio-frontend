@@ -2,6 +2,7 @@ import { Component } from 'react';
 import Aside from '../components/Aside';
 import Title from '../components/Title';
 import data from '../utils/projectsList';
+import LanguageProgress from '../components/LanguageProgress';
 
 class ProjectsDetails extends Component {
   render() {
@@ -12,6 +13,7 @@ class ProjectsDetails extends Component {
       <div>
         <Title title={name} />
         <Aside history={history} />
+        <LanguageProgress />
       </div>
     );
   }

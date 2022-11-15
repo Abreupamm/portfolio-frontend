@@ -7,12 +7,12 @@ const data = [
   //   urlApication: '',
   //   description: 'teste',
   //   stacks: ['HTML', 'CSS'],
-  //   category: 'front',
+  //   category: 'front',s
   // },
   {
     id: 1,
     name: 'Pixels Art',
-    image: 'https://gartic.com.br/imgs/mural/os/oscascavelletes/panda-pixel-p-mand26.png',
+    image: 'https://i.pinimg.com/originals/60/96/24/60962403310debc750aefcff61e075a5.jpg',
     urlGitHub: 'https://github.com/Abreupamm/project-pixels-art',
     urlApication: 'https://abreupamm.github.io/project-pixels-art/',
     description: 'O Pixel-Art é uma página web que contém uma paleta de cores funcional que poderá ser utilizada para criar desenhos em pixels.',

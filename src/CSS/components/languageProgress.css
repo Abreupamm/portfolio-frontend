@@ -1,0 +1,11 @@
+.container-progress {
+  width: 150px;
+}
+
+.container-progress span {
+  margin-top: -10;
+  font-size: 20px;
+}
+.container-progress strong {
+  font-size: 35px;
+}
