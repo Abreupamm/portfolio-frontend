@@ -3,6 +3,7 @@ import Aside from '../components/Aside';
 import Title from '../components/Title';
 import ProjectsCard from '../components/ProjectsCard';
 import data from '../utils/projectsList';
+import Footer from '../components/Footer';
 import '../CSS/pages/projectspage.css';
 import Loading from '../components/Loading';
 
@@ -39,6 +40,7 @@ class ProjectsFrontend extends Component {
               )
           )}
         </div>
+        <Footer />
       </div>
     );
   }

@@ -3,6 +3,7 @@ import Aside from '../components/Aside';
 import Title from '../components/Title';
 import IconStacks from '../components/IconStacks';
 import Loading from '../components/Loading';
+import Footer from '../components/Footer';
 import data from '../utils/projectsList';
 import LanguageProgress from '../components/LanguageProgress';
 import { fetchLanguageProgress } from '../utils/fetchProjects';
@@ -125,6 +126,7 @@ class ProjectsDetails extends Component {
             ))}
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

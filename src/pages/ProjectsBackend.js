@@ -5,6 +5,7 @@ import Title from '../components/Title';
 import ProjectsCard from '../components/ProjectsCard';
 import data from '../utils/projectsList';
 import Loading from '../components/Loading';
+import Footer from '../components/Footer';
 
 class ProjectsBackend extends Component {
   state = { loading: true };
@@ -37,6 +38,7 @@ class ProjectsBackend extends Component {
               project.category === 'back' && <ProjectsCard history={history} data={project} />
           )}
         </div>
+        <Footer />
       </div>
     );
   }
