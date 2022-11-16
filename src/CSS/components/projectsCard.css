@@ -25,16 +25,16 @@
   width: 100%;
   height: 100%;
   border-radius: 10px 10px 0 0;
-  background-color: #2901379f;
+  background-color: #290137c2;
   opacity: 0;
 }
 
 .container-projects button {
   display: block;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   color: #ded5df;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
   font-family: 'Parisienne', cursive;
   background: linear-gradient(180deg, #5e0080 0%, #a700c2 51.56%, #ff00e5 100%);
