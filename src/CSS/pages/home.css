@@ -2,28 +2,27 @@
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.937);
 }
 
 .container-name {
   position: absolute;
-  top: 0;
-  right: 0;
-  min-height: 80%;
-  width: 57%;
+  top: 10%;
+  right: 10%;
+  min-height: 70%;
+  width: 50%;
   display: inline-block;
-  background-color: #000;
   text-align: center;
-  border: #ff00e5 solid 1px;
+  padding-top: 10%;
 }
 
 .name {
-  height: 80px;
-  margin-top: 30%;
+  height: 120px;
+  margin-top: 50px;
   margin-bottom: 0;
   font-family: 'Parisienne', cursive;
   font-weight: 100;
-  font-size: 80px;
+  font-size: 120px;
   background: linear-gradient(
     180deg,
     #5e0080 20%,
@@ -44,15 +43,24 @@
   font-family: 'Nunito', sans-serif;
 }
 
+.hi1 {
+  color: #a700c2;
+}
+
 .button-about {
-  margin-top: 35px;
+  margin-top: 15%;
   width: 150px;
   height: 47px;
   font-family: 'Nunito', sans-serif;
   font-size: 15px;
   font-weight: 700;
   color: #ded5df;
-  background: linear-gradient(180deg, rgb(94, 0, 128) 0%, rgb(167, 0, 194) 51.56%, rgb(255, 0, 229) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(94, 0, 128) 0%,
+    rgb(167, 0, 194) 51.56%,
+    rgb(255, 0, 229) 100%
+  );
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 }
@@ -62,11 +70,9 @@
   height: 51px;
 }
 
-.container-img {
-  position: absolute;
-  left: 0;
-  min-height: 95vh;
-  width: 43%;
-  display: inline-block;
-  background-color: #ded5df;
+.home-page img {
+  opacity: 0.16;
+  width: 96%;
+  height: 96vh;
+  margin-left: 55px;
 }
