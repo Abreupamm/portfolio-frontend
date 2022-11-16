@@ -27,7 +27,7 @@ class Home extends Component {
         />
         <div className={`container-name ${css(styles.bounceInDown)}`}>
           <span className={'sub-title hi1'}>Olá,</span>
-          <span className="sub-title hi2"> meu name é</span>
+          <span className="sub-title hi2"> meu nome é</span>
           <h1 className="name">Pamela Abreu</h1>
           <h3 className="sub-title">Desenvolvedora Full Stack</h3>
           <button onClick={this.handleOnClick} className="button-about">

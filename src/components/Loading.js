@@ -6,15 +6,15 @@ class Loading extends Component {
     return (
       <div style={{ 
         width: '50%',
-        paddingTop: '10%',
-        paddingLeft: '40%',
+        paddingTop: '20%',
+        paddingLeft: '45%',
         alignItems: 'center'
        }}>
         <ReactLoading
           type={'spinningBubbles'}
           color={'#a700c2'}
-          height={600}
-          width={300}
+          height={300}
+          width={150}
         />
       </div>
     );
