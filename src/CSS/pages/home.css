@@ -2,17 +2,19 @@
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  background-color: #000;
 }
 
 .container-name {
   position: absolute;
   top: 0;
   right: 0;
-  min-height: 100vh;
+  min-height: 80%;
   width: 57%;
   display: inline-block;
   background-color: #000;
   text-align: center;
+  border: #ff00e5 solid 1px;
 }
 
 .name {
@@ -63,7 +65,7 @@
 .container-img {
   position: absolute;
   left: 0;
-  min-height: 100vh;
+  min-height: 95vh;
   width: 43%;
   display: inline-block;
   background-color: #ded5df;

@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import '../CSS/pages/home.css';
 import Aside from '../components/Aside';
+import Footer from '../components/Footer';
 
 class Home extends Component {
   handleOnClick = () => {
@@ -11,9 +12,9 @@ class Home extends Component {
     const { history } = this.props;
     return (
       <div className="home-page">
-        <div className="container-img">
+        {/* <div className="container-img"> */}
           <Aside history={history} />
-        </div>
+        {/* </div> */}
         <div className="container-name">
           <h1 className="name">Pamela Abreu</h1>
           <h3 className="sub-title">Full Stack Developer</h3>
@@ -21,6 +22,7 @@ class Home extends Component {
             SOBRE MIM
           </button>
         </div>
+        <Footer />
       </div>
     );
   }
