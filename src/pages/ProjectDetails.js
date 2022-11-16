@@ -8,6 +8,8 @@ import data from '../utils/projectsList';
 import LanguageProgress from '../components/LanguageProgress';
 import { fetchLanguageProgress } from '../utils/fetchProjects';
 import '../CSS/pages/projectDetails.css';
+import { fadeInDownBig } from 'react-animations';
+import { StyleSheet, css } from 'aphrodite';
 
 class ProjectsDetails extends Component {
   state = {
@@ -95,12 +97,19 @@ class ProjectsDetails extends Component {
       );
     }
 
+    const styles = StyleSheet.create({
+      animation: {
+        animationName: fadeInDownBig,
+        animationDuration: '5s',
+      },
+    });
+
     return (
       <div className="container-datails">
         <Title title={name} />
         <Aside history={history} />
 
-        <div className="container-left">
+        <div className={`container-left ${css(styles.animation)}`}>
           {category === 'front' && (
             <img src={gif} alt={`gif da aplicação ${name}`} />
           )}
