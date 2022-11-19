@@ -27,19 +27,20 @@ class Aside extends Component {
           history={history}
         />
         <IconAside
-          className="icon-front"
-          page="projects-frontend"
-          name="Projetos FrontEnd"
-          urlIcon={iconFront}
-          history={history}
-        />
-        <IconAside
           className="icon-back"
           page="projects-backend"
           name="Projetos BackEnd"
           urlIcon={iconBack}
           history={history}
         />
+        <IconAside
+          className="icon-front"
+          page="projects-frontend"
+          name="Projetos FrontEnd"
+          urlIcon={iconFront}
+          history={history}
+        />
+
         <IconAside
           className="icon-contact"
           page="contact"
