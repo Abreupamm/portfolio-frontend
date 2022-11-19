@@ -23,7 +23,7 @@ class Home extends Component {
         <Aside history={history} />
         <img
           alt=""
-          src="https://cdn.euroinnova.edu.es/img/subidasEditor/alba%20(1)-1624881248.webp"
+          src="https://www.informaticienadomicile.com/wp-content/uploads/2022/02/ecoles-codage-informatique.jpeg"
         />
         <div className={`container-name ${css(styles.bounceInDown)}`}>
           <span className={'sub-title hi1'}>Olá,</span>
@@ -34,7 +34,7 @@ class Home extends Component {
             SOBRE MIM
           </button>
         </div>
-        <Footer />
+        <Footer position="bottom" />
       </div>
     );
   }

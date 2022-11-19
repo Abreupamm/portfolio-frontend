@@ -38,7 +38,7 @@ class ProjectsBackend extends Component {
               project.category === 'back' && <ProjectsCard history={history} data={project} />
           )}
         </div>
-        <Footer />
+        <Footer position="bottom"/>
       </div>
     );
   }

@@ -11,7 +11,7 @@ class Contact extends Component {
       <div>
         <Title title="CONTATO" />
         <Aside history={history} position="left" />
-        <Footer />
+        <Footer position="bottom"/>
       </div>
     );
   }

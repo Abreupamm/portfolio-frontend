@@ -2,13 +2,13 @@
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.937);
+  background-color: rgb(0, 0, 0);
 }
 
 .container-name {
   position: absolute;
   top: 10%;
-  right: 10%;
+  left: 10%;
   min-height: 70%;
   width: 50%;
   display: inline-block;
@@ -71,11 +71,7 @@
 }
 
 .home-page img {
-  opacity: 0.16;
+  opacity: 0.14;
   width: 100%;
   height: 96vh;
-  -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
 }
