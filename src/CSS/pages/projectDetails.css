@@ -12,19 +12,20 @@
 }
 
 .container-right {
+  width: 40%;
+  position: absolute;
+  right: 10%;
   margin-top: 5%;
-  margin-left: 50%;
-  width: 49%;
 }
 
 .container-left {
-  width: 40%;
-  margin-left: 10%;
   margin-top: 5%;
-  position: absolute;
+  margin-right: 50%;
+  width: 49%;
+  text-align: center;
 }
 
-.container-right .div-progress {
+.container-left .div-progress {
   display: flex;
   flex-direction: row-reverse;
   width: 70%;
@@ -40,7 +41,7 @@
   padding: 5px;
 }
 
-.container-right p {
+.container-left p {
   display: block;
   margin: 10% auto;
   width: 90%;
@@ -54,7 +55,7 @@
   width: 85%;
 }
 
-.container-right .div-buttons button {
+.container-left .div-buttons button {
   width: 150px;
   height: 47px;
   font-family: 'Nunito', sans-serif;
@@ -71,12 +72,12 @@
   border-radius: 20px;
 }
 
-.container-right .div-buttons button:hover {
+.container-left .div-buttons button:hover {
   width: 152px;
   height: 48px;
 }
 
-.container-right .div-buttons {
+.container-left .div-buttons {
   display: flex;
   align-items: center;
   margin: 10% auto 5% auto;

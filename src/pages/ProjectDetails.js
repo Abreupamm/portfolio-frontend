@@ -109,7 +109,7 @@ class ProjectsDetails extends Component {
         <Title title={name} />
         <Aside history={history} />
 
-        <div className={`container-left ${css(styles.animation)}`}>
+        <div className={`container-right ${css(styles.animation)}`}>
           {category === 'front' && (
             <img src={gif} alt={`gif da aplicação ${name}`} />
           )}
@@ -117,7 +117,7 @@ class ProjectsDetails extends Component {
           <span className="skills">{`Habilidades: ${skills}`}</span>
         </div>
 
-        <div className="container-right">
+        <div className="container-left">
           <p>{description}</p>
           <div className="div-buttons">
             <button onClick={this.handleOnClick} name="code">
@@ -135,7 +135,7 @@ class ProjectsDetails extends Component {
             ))}
           </div>
         </div>
-        <Footer />
+        <Footer position="bottom"/>
       </div>
     );
   }
