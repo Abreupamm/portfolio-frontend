@@ -9,9 +9,10 @@ class IconAside extends Component {
   };
 
   render() {
-    const { urlIcon, name } = this.props;
+    const { urlIcon, name, page } = this.props;
     return (
-      <div className="container-icon">
+      <div className={`container-icon  ${page}`}>
+        <span className="description">{name}</span>
         <input
           className="icon"
           alt={name}
@@ -19,7 +20,6 @@ class IconAside extends Component {
           src={urlIcon}
           onClick={this.handleOnClick}
         />
-        <span className="description">{name}</span>
       </div>
     );
   }
