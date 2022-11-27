@@ -17,7 +17,7 @@ class IconStacks extends Component {
 
     return (
       <div>
-        <h3 style={{ marginLeft: '60px' }}>Tecnologias utilizadas:</h3>
+        <h3 style={{ marginLeft: '60px' }}>Stacks utilizadas:</h3>
         <div style={styleContainer}>
           {stacks.map((stack) => (
             <img
