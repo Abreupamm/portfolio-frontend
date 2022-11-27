@@ -3,15 +3,20 @@
   background-color: #000;
 }
 
-.about-page p {
+.about-page .sobre {
   position: absolute;
   display: block;
-  left: 0;
-  right: 0;
-  margin: 10% auto;
+  right: 10%;
+  top: 150px;
   color: #ded5df;;
   font-family: 'Nunito', sans-serif;
-  width: 80%;
+  width: 45%;
   font-size: 20px;
   line-height: 30px;
+}
+
+.myImage {
+  height: 40%;
+  width: 40%;
+  margin-top: 120px;
 }

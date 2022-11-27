@@ -11,8 +11,8 @@
 .container-links-redes {
   display: flex;
   position: absolute;
-  left: 200px;
-  bottom: 60px;
+  right: 30%;
+  bottom: 100px;
   width: 220px;
   height: 100px;
   justify-content: space-between;

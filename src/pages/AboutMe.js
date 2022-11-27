@@ -2,7 +2,9 @@ import { Component } from 'react';
 import Aside from '../components/Aside';
 import Title from '../components/Title';
 import Links from '../components/Links';
+import Footer from '../components/Footer';
 import '../CSS/pages/about.css';
+import myImage from '../images/pamela.jpeg';
 
 class AboutMe extends Component {
   render() {
@@ -11,7 +13,8 @@ class AboutMe extends Component {
       <div className="about-page">
         <Title title="SOBRE MIM" />
         <Aside history={history} />
-        <p>
+        <img className='myImage' alt='Pamela' src={myImage}/>
+        <p className='sobre'>
           Me apaixonei por tecnologia assim que tive o primeiro contato com
           programação em 2021, decidi estudar desenvolvimento web e foi a melhor
           escolha que já fiz.Nesse pouco tempo, no universo da tecnologia, já
@@ -22,6 +25,7 @@ class AboutMe extends Component {
           cada vez mais vidas e rotinas utilizando a programação!
         </p>
         <Links/>
+        <Footer position="bottom" />
       </div>
     );
   }
