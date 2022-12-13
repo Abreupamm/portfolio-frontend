@@ -50,6 +50,19 @@ const data = [
   },
   {
     id: 3,
+    name: 'Shopping cart',
+    projectName: 'shopping-cart',
+    image: 'https://st2.depositphotos.com/4060975/9124/v/600/depositphotos_91245802-stock-illustration-shopping-cart-colored-vector-illustration.jpg',
+    gif: 'https://github.com/Abreupamm/project-shopping-cart/raw/main/prototipo.gif',
+    urlGitHub: 'https://github.com/Abreupamm/project-shopping-cart',
+    urlApication: 'https://abreupamm.github.io/project-shopping-cart/',
+    description: 'Nesse projeto foi feito um carrinho de compras totalmente dinâmico, consumindo dados diretamente de uma API do Mercado Livre!',
+    stacks: ['javascript', 'css', 'html'],
+    skills: 'Fazer requisições a uma API, trabalhar com funções assíncronas e implementar testes unitários',
+    category: 'front',
+  },
+  {
+    id: 4,
     name: 'Solar System',
     projectName: 'solar-system',
     image: 'https://static.todamateria.com.br/upload/56/55/5655139e0842d-sistema-solar.jpg?auto_optimize=low',
@@ -62,7 +75,7 @@ const data = [
     category: 'front',
   },
   {
-    id: 4,
+    id: 5,
     name: 'TrybeTunes',
     projectName: 'trybetunes',
     image: 'https://www.pegadesconto.com.br/wp-content/uploads/2020/09/podcast-cafe-chocolate.jpg',
@@ -75,7 +88,7 @@ const data = [
     category: 'front',
   },
   {
-    id: 5,
+    id: 6,
     name: 'Docker Todo-List',
     projectName: '',
     image: 'https://pbs.twimg.com/media/DEavFDzVYAAbxPV.jpg:small',
@@ -88,7 +101,7 @@ const data = [
     category: 'back',
   },
   {
-    id: 6,
+    id: 7,
     name: 'All For One',
     projectName: '',
     image: 'https://www.jogospuzzle.com/imatjes/golfinhos-por-do-sol_4fe44ce00b9d2-p.jpg',
@@ -101,7 +114,7 @@ const data = [
     category: 'back',
   },
   {
-    id: 7,
+    id: 8,
     name: 'Talker Manager',
     projectName: '',
     image: 'https://media.istockphoto.com/id/578574238/vector/business-seminar-speaker-doing-presentation-and-professional-training.jpg?s=612x612&w=0&k=20&c=dNC83HBTi2shXlTEz5Gql9OjLz4rYtt0iExQbSQstuQ=',
@@ -114,7 +127,7 @@ const data = [
     category: 'back',
   },
   {
-    id: 8,
+    id: 9,
     name: 'MongoDB Commerce',
     projectName: '',
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8qjYQfVCGh2fR7KAZLQ-dN--UyWCzWqO-Ms0jgDp9TWDqhqmYS1T0uZqfH2fhKQ9Tk0s&usqp=CAU',
