@@ -138,9 +138,7 @@ const data = [
     stacks: ['mongodb', 'docker'],
     skills: 'Subir o banco utilizando docker e construir queries para fazer buscas, alterações, e deletar informações do banco de dados.',
     category: 'back',
-  },
-
-  
+  }
 ];
 
 export default data;
