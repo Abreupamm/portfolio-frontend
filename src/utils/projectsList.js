@@ -79,7 +79,7 @@ const data = [
     name: 'TrybeTunes',
     projectName: 'trybetunes',
     image: 'https://www.pegadesconto.com.br/wp-content/uploads/2020/09/podcast-cafe-chocolate.jpg',
-    gif: '',
+    gif: 'https://github.com/Abreupamm/project-TrybeTunes/raw/main/trybetunes.gif',
     urlGitHub: 'https://github.com/Abreupamm/project-TrybeTunes',
     urlApication: '',
     description: 'Nesse projeto utilizei a biblioteca React para criar uma aplicação onde é possível pesquisar e listar álbuns e músicas de várias bandas e artistas. É possível até mesmo ouvir o preview de cada música. Além disso, você também poderá favoritar suas músicas preferidas. Tudo isso foi dividido em várias rotas, cada uma responsável por uma parte da funcionalidade.',
@@ -89,6 +89,19 @@ const data = [
   },
   {
     id: 6,
+    name: 'TrybeWallet',
+    projectName: 'trybewallet',
+    image: 'https://img.freepik.com/vetores-premium/carteira-com-dinheiro-e-pilha-de-moedas-de-ouro-vector-icon-ilustracao_138676-359.jpg?w=2000',
+    gif: 'https://img.freepik.com/vetores-premium/carteira-com-dinheiro-e-pilha-de-moedas-de-ouro-vector-icon-ilustracao_138676-359.jpg?w=2000',
+    urlGitHub: 'https://github.com/Abreupamm/project-react-trybewallet',
+    urlApication: '',
+    description: 'Neste projeto desenvolvi uma carteira de controle de gastos, em React.js, com conversor de moedas, ao utilizar essa aplicação um usuário deverá é capaz de adicionar um gasto, visualizar uma tabela com seus gastos e visualizar o total de gastos convertidos para uma moeda de sua escolha.',
+    stacks: ['react', 'css', 'javascript'],
+    skills: 'Redux em aplicações React: Criar store, reducers, actions, dispatchers e actions assíncronas',
+    category: 'front',
+  },
+  {
+    id: 7,
     name: 'Docker Todo-List',
     projectName: '',
     image: 'https://pbs.twimg.com/media/DEavFDzVYAAbxPV.jpg:small',
@@ -101,7 +114,7 @@ const data = [
     category: 'back',
   },
   {
-    id: 7,
+    id: 8,
     name: 'All For One',
     projectName: '',
     image: 'https://www.jogospuzzle.com/imatjes/golfinhos-por-do-sol_4fe44ce00b9d2-p.jpg',
@@ -114,7 +127,7 @@ const data = [
     category: 'back',
   },
   {
-    id: 8,
+    id: 9,
     name: 'Talker Manager',
     projectName: '',
     image: 'https://media.istockphoto.com/id/578574238/vector/business-seminar-speaker-doing-presentation-and-professional-training.jpg?s=612x612&w=0&k=20&c=dNC83HBTi2shXlTEz5Gql9OjLz4rYtt0iExQbSQstuQ=',
@@ -127,7 +140,7 @@ const data = [
     category: 'back',
   },
   {
-    id: 9,
+    id: 10,
     name: 'MongoDB Commerce',
     projectName: '',
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8qjYQfVCGh2fR7KAZLQ-dN--UyWCzWqO-Ms0jgDp9TWDqhqmYS1T0uZqfH2fhKQ9Tk0s&usqp=CAU',
@@ -138,7 +151,8 @@ const data = [
     stacks: ['mongodb', 'docker'],
     skills: 'Subir o banco utilizando docker e construir queries para fazer buscas, alterações, e deletar informações do banco de dados.',
     category: 'back',
-  }
+  },
+  
 ];
 
 export default data;
