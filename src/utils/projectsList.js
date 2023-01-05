@@ -89,6 +89,19 @@ const data = [
   },
   {
     id: 6,
+    name: 'Jogo Trivia',
+    projectName: 'trivia',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE-P_7XapB5jXY7fSwqceSUNMwdv4gfDVW6zL5hB_kZek_-soF_mQVcPIWBPuNNXz1anc&usqp=CAU',
+    gif: 'https://github.com/Abreupamm/jogo-trivia/raw/main/trivia.gif',
+    urlGitHub: 'https://github.com/Abreupamm/jogo-trivia',
+    urlApication: '',
+    description: 'Esse projeto é um jogo de perguntas e respostas baseado no jogo Trivia, parecido um show do milhão americano, utilizando React e Redux, foi feito em  equipe com a metodologia agile Kanban.',
+    stacks: ['react', 'css', 'javascript'],
+    skills: 'Cobertura de testes, React, gerenciamento de estado com Redux e metodologia Kanban.',
+    category: 'front',
+  },
+  {
+    id: 7,
     name: 'TrybeWallet',
     projectName: 'trybewallet',
     image: 'https://img.freepik.com/vetores-premium/carteira-com-dinheiro-e-pilha-de-moedas-de-ouro-vector-icon-ilustracao_138676-359.jpg?w=2000',
@@ -101,7 +114,7 @@ const data = [
     category: 'front',
   },
   {
-    id: 7,
+    id: 8,
     name: 'Docker Todo-List',
     projectName: '',
     image: 'https://pbs.twimg.com/media/DEavFDzVYAAbxPV.jpg:small',
@@ -114,7 +127,7 @@ const data = [
     category: 'back',
   },
   {
-    id: 8,
+    id: 9,
     name: 'All For One',
     projectName: '',
     image: 'https://www.jogospuzzle.com/imatjes/golfinhos-por-do-sol_4fe44ce00b9d2-p.jpg',
@@ -127,7 +140,7 @@ const data = [
     category: 'back',
   },
   {
-    id: 9,
+    id: 10,
     name: 'Talker Manager',
     projectName: '',
     image: 'https://media.istockphoto.com/id/578574238/vector/business-seminar-speaker-doing-presentation-and-professional-training.jpg?s=612x612&w=0&k=20&c=dNC83HBTi2shXlTEz5Gql9OjLz4rYtt0iExQbSQstuQ=',
@@ -140,7 +153,7 @@ const data = [
     category: 'back',
   },
   {
-    id: 10,
+    id: 11,
     name: 'MongoDB Commerce',
     projectName: '',
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8qjYQfVCGh2fR7KAZLQ-dN--UyWCzWqO-Ms0jgDp9TWDqhqmYS1T0uZqfH2fhKQ9Tk0s&usqp=CAU',

@@ -40,7 +40,7 @@ class ProjectsFrontend extends Component {
               )
           )}
         </div>
-        <Footer position="bottom"/>
+        <Footer position=""/>
       </div>
     );
   }
