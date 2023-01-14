@@ -1,48 +1,15 @@
 import styled from 'styled-components';
 
-export const PresentationContainer = styled.div `
+export const BackgroundContainer = styled.div`
   width: 100%;
-  height: 450px;
+  height: 100%;
   position: fixed;
-  z-index: -1;
+  z-index: -2;
   background-color: #000;
-  height: 450px;
-
+  
   img {
     width: 100%;
-    height: 450px;
+    height: 95%;
     opacity: 0.5;
-  }
-
-  div {
-    position: absolute;
-    top: 40px;
-    left: 10%;
-    right: 10%;
-    
-    h1 {
-      color: #a8f;
-      font-family: "Rubik",sans-serif;
-      font-size: 90px;
-      margin-left: 5%;
-    }
-
-    span, h3 {
-      color: white;
-      font-family: "IBMPlexMonoItalic",monospace;
-    }
-
-    h3{
-      margin-left: 40%;
-      font-size: 30px;
-      font-weight: 300;
-      span {
-        color: #2e0;
-      }
-    }
-
-    span {
-      font-size: 25px;
-    }
   }
 `;
