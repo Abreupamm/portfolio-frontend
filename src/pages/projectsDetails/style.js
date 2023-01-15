@@ -31,7 +31,6 @@ export const Title = styled.h1`
 `;
 
 export const GifContainer = styled.div`
-  border: solid green 1px;
   position: absolute;
   right: 20px;
   top: 20%;
@@ -43,5 +42,8 @@ export const GifContainer = styled.div`
 
   img {
     width: 100%;
+  }
+  h3 {
+    font-family: 'IBMPlexMonoItalic', monospace;
   }
 `;

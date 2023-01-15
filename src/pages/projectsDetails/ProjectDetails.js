@@ -10,11 +10,7 @@ import Loading from '../../components/Loading';
 import data from '../../utils/projectsList';
 // import LanguageProgress from '../../components/LanguageProgress';
 import createCalcProgress from '../../utils/createCalcProgress';
-import {
-  ContainerProjectsDetails,
-  Title,
-  GifContainer,
- } from './style';
+import { ContainerProjectsDetails, Title, GifContainer } from './style';
 import handleColorBackground from '../../utils/handleColorBackground';
 
 class ProjectsDetails extends Component {
@@ -39,7 +35,11 @@ class ProjectsDetails extends Component {
     const { keys, values } = await createCalcProgress(
       projectData[0].projectName,
     );
-    this.setState({ processNames: keys, values, color: handleColorBackground() });
+    this.setState({
+      processNames: keys,
+      values,
+      color: handleColorBackground(),
+    });
     const time = 1000;
     setTimeout(() => {
       this.setState({ loading: false });
@@ -87,13 +87,18 @@ class ProjectsDetails extends Component {
 
     return (
       <ContainerProjectsDetails>
-        <Title color={ color }>{ name }</Title>
+        <Title color={ color }>{name}</Title>
         <p>{description}</p>
-        <GifContainer className={ css(styles.animation) }>
+        <GifContainer color={ color } className={ css(styles.animation) }>
           {category === 'front' && (
             <img src={ gif } alt={ `gif da aplicação ${name}` } />
           )}
-          {category === 'back' && <IconStacks stacks={ stacks } />}
+          {category === 'back' && (
+            <>
+              <h3>Stacks utilizadas:</h3>
+              <IconStacks stacks={ stacks } />
+            </>
+          )}
         </GifContainer>
         <div className="container-left">
           {/* <div className="div-buttons">

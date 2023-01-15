@@ -19,7 +19,6 @@ class IconStacks extends Component {
 
     return (
       <StyleContainer>
-        <h3>Stacks utilizadas:</h3>
         {stacks.map((stackName, i) => (
           <div key={ i }>
             <img

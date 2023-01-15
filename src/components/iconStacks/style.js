@@ -16,7 +16,7 @@ export const StyleContainer = styled.div`
   }
 
   img {
-    width: 60px;
+    width: 55px;
     margin-bottom: 5px;
   }
 `;
