@@ -1,6 +1,4 @@
 import { Component } from 'react';
-// import { zoomInDown } from 'react-animations';
-// import { StyleSheet, css } from 'aphrodite';
 import PropTypes from 'prop-types';
 import { ProjectCardsContainer, Stacks, ProjectsName } from './style';
 
@@ -15,18 +13,17 @@ class ProjectsCard extends Component {
     return list[indexRandom];
   };
 
+  handleClick = () => {
+    const { history, data: { id } } = this.props;
+    history.push(`/projects-details/${id}`);
+  };
+
   render() {
     const {
       data: { name, stacks, skills },
     } = this.props;
-    // const styles = StyleSheet.create({
-    //   styleAnimation: {
-    //     animationName: zoomInDown,
-    //     animationDuration: '4s',
-    //   },
-    // });
     return (
-      <ProjectCardsContainer>
+      <ProjectCardsContainer onClick={ this.handleClick }>
         <ProjectsName color={ this.handleColor }>{name}</ProjectsName>
         <p>{skills}</p>
         <div>
@@ -44,6 +41,10 @@ ProjectsCard.propTypes = {
     stacks: PropTypes.oneOf([Array]).isRequired,
     name: PropTypes.string.isRequired,
     skills: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+  }).isRequired,
+  history: PropTypes.shape({
+    push: PropTypes.func.isRequired,
   }).isRequired,
 };
 

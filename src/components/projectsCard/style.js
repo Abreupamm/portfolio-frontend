@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ProjectCardsContainer = styled.a`
+export const ProjectCardsContainer = styled.div`
   display: block;
   background-color: #000;
   color: white;
@@ -8,6 +8,7 @@ export const ProjectCardsContainer = styled.a`
   font-family: 'IBMPlexMonoItalic', monospace;
   margin: 20px;
   box-shadow: 5px 10px 10px #000;
+  border: red solid 1px;
   :hover{
       span {
         padding-left: 60px;

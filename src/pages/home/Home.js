@@ -31,6 +31,8 @@ class Home extends Component {
 
   render() {
     const { projectList, buttonName } = this.state;
+    // eslint-disable-next-line react/prop-types
+    const { history } = this.props;
     return (
       <>
         <BackgroundContainer>
@@ -45,7 +47,7 @@ class Home extends Component {
             <h2>Projetos</h2>
             <Container>
               {projectList.map((project) => (
-                <ProjectsCard key={ project.id } data={ project } />
+                <ProjectsCard history={ history } key={ project.id } data={ project } />
               ))}
             </Container>
             <button onClick={ this.handleClick }>{ buttonName }</button>

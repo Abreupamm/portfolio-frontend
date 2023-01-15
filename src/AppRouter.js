@@ -5,7 +5,7 @@ import AboutMe from './components/about/AboutMe';
 import ProjectsFrontend from './pages/ProjectsFrontend';
 import ProjectsBackend from './pages/ProjectsBackend';
 import Contact from './pages/Contacts';
-import ProjectsDetails from './pages/ProjectDetails';
+import ProjectsDetails from './pages/projectsDetails/ProjectDetails';
 import NotFound from './pages/NotFound';
 
 class AppRouter extends Component {
