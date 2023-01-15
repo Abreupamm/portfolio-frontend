@@ -1,10 +1,11 @@
 import { Component } from 'react';
 import { BackgroundContainer } from './style';
 import AboutMe from '../../components/about/AboutMe';
+import ProjectsCard from '../../components/projectsCard/ProjectsCard';
+import data from '../../utils/projectsList';
 
 class Home extends Component {
   render() {
-    // const { history } = this.props;
     return (
       <div className="home-page">
         <BackgroundContainer>
@@ -14,6 +15,9 @@ class Home extends Component {
           />
         </BackgroundContainer>
         <AboutMe />
+        {data.map(
+          (project) => <ProjectsCard history="" key={ project.id } data={ project } />,
+        )}
       </div>
     );
   }

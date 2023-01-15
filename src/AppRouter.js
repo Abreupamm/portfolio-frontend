@@ -13,12 +13,12 @@ class AppRouter extends Component {
     return (
       <main>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about-me" component={AboutMe} />
-          <Route path="/projects-frontend" component={ProjectsFrontend} />
-          <Route path="/projects-backend" component={ProjectsBackend} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/projects-details/:id" component={ProjectsDetails} />
+          <Route exact path="/" component={ Home } />
+          <Route path="/about-me" component={ AboutMe } />
+          <Route path="/projects-frontend" component={ ProjectsFrontend } />
+          <Route path="/projects-backend" component={ ProjectsBackend } />
+          <Route path="/contact" component={ Contact } />
+          <Route path="/projects-details/:id" component={ ProjectsDetails } />
           <Route exact path="*" component={ NotFound } />
         </Switch>
       </main>

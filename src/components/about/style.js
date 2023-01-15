@@ -56,5 +56,5 @@ export const ParagraphContainer = styled.div`
   width: 60%;
   font-size: 18px;
   font-family: 'Rubik', sans-serif;
-   line-height: 18pt;
+  line-height: 18pt;
 `;
