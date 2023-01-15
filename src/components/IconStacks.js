@@ -1,8 +1,12 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/jsx-curly-spacing */
 import { Component } from 'react';
 import { getStacksImage } from '../utils/getStacks';
 
 class IconStacks extends Component {
   state = getStacksImage;
+  // eslint-disable-next-line lines-between-class-members
   render() {
     const { stacks } = this.props;
     const styleImage = { width: '70px' };
@@ -17,7 +21,7 @@ class IconStacks extends Component {
 
     return (
       <div>
-        <h3 style={{ marginLeft: '60px' }}>Stacks utilizadas:</h3>
+        <h3 style={ {} }>Stacks utilizadas:</h3>
         <div style={styleContainer}>
           {stacks.map((stack) => (
             <img

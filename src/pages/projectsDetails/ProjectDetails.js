@@ -1,68 +1,50 @@
+/* eslint-disable indent */
+/* eslint-disable react/no-unused-class-component-methods */
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unused-state */
 import { Component } from 'react';
-// import Title from '../../components/Title';
-// import IconStacks from '../../components/IconStacks';
-// import Loading from '../../components/Loading';
-// import data from '../../utils/projectsList';
+import { StyleSheet, css } from 'aphrodite';
+import { fadeInDownBig } from 'react-animations';
+import IconStacks from '../../components/IconStacks';
+import Loading from '../../components/Loading';
+import data from '../../utils/projectsList';
 // import LanguageProgress from '../../components/LanguageProgress';
-// import { fetchLanguageProgress } from '../../utils/fetchProjects';
-// import '../CSS/pages/projectDetails.css';
-// import { fadeInDownBig } from 'react-animations';
-// import { StyleSheet, css } from 'aphrodite';
+import createCalcProgress from '../../utils/createCalcProgress';
+import {
+  ContainerProjectsDetails,
+  Title,
+  GifContainer,
+ } from './style';
+import handleColorBackground from '../../utils/handleColorBackground';
 
 class ProjectsDetails extends Component {
-  // state = {
-  //   loading: false,
-  //   values: [],
-  //   keys: [],
-  // };
+  state = {
+    loading: false,
+    values: [],
+    processNames: [],
+    project: [],
+    color: '',
+  };
 
-  // createCalcProgress = async (projectName) => {
-  //   const getProgress = await fetchLanguageProgress(projectName);
-  //   let calc = 0;
-  //   Object.values(getProgress).map((value) => (calc += value));
-  //   const values = Object.values(getProgress).map((value) =>
-  //     ((value / calc) * 100).toFixed()
-  //   );
-  //   const keys = Object.keys(getProgress);
-  //   this.setState({ loading: false });
-  //   this.setState({ keys, values });
-  // };
+  async componentDidMount() {
+    this.setState({ loading: true });
+    const {
+      match: {
+        params: { id },
+      },
+    } = this.props;
 
-  // componentDidMount = async () => {
-  //   this.setState({ loading: true });
-  //   const {
-  //     match: {
-  //       params: { id },
-  //     },
-  //   } = this.props;
-
-  //   const projectData = data.filter((project) => project.id === JSON.parse(id));
-  //   const {
-  //     name,
-  //     projectName,
-  //     gif,
-  //     description,
-  //     urlApication,
-  //     urlGitHub,
-  //     stacks,
-  //     skills,
-  //     category,
-  //   } = projectData[0];
-
-  //   this.setState({
-  //     name,
-  //     projectName,
-  //     gif,
-  //     description,
-  //     urlApication,
-  //     urlGitHub,
-  //     stacks,
-  //     category,
-  //     skills,
-  //   });
-
-  //   await this.createCalcProgress(projectName);
-  // };
+    const projectData = data.filter((project) => project.id === JSON.parse(id));
+    this.setState({ project: projectData[0] });
+    const { keys, values } = await createCalcProgress(
+      projectData[0].projectName,
+    );
+    this.setState({ processNames: keys, values, color: handleColorBackground() });
+    const time = 1000;
+    setTimeout(() => {
+      this.setState({ loading: false });
+    }, time);
+  }
 
   // handleOnClick = ({ target }) => {
   //   let url;
@@ -74,66 +56,64 @@ class ProjectsDetails extends Component {
   render() {
     // const { history } = this.props;
 
-    // const {
-    //   loading,
-    //   keys,
-    //   values,
-    //   name,
-    //   gif,
-    //   description,
-    //   urlApication,
-    //   skills,
-    //   category,
-    //   stacks,
-    // } = this.state;
+    const {
+      loading,
+      color,
+      project: {
+        name,
+        category,
+        stacks,
+        description,
+        // urlApication,
+        // processNames,
+        gif,
+      },
+    } = this.state;
 
-    // if (loading) {
-    //   return (
-    //     <div className="container-datails">
-    //       <Loading />
-    //     </div>
-    //   );
-    // }
+    if (loading) {
+      return (
+        <ContainerProjectsDetails>
+          <Loading />
+        </ContainerProjectsDetails>
+      );
+    }
 
-    // const styles = StyleSheet.create({
-    //   animation: {
-    //     animationName: fadeInDownBig,
-    //     animationDuration: '5s',
-    //   },
-    // });
+    const styles = StyleSheet.create({
+      animation: {
+        animationName: fadeInDownBig,
+        animationDuration: '5s',
+      },
+    });
 
     return (
-      <h1>Details</h1>
-      // <div className="container-datails">
-      //   <Title title={name} />
-
-    //   <div className={`container-right ${css(styles.animation)}`}>
-    //     {category === 'front' && (
-    //       <img src={gif} alt={`gif da aplicação ${name}`} />
-    //     )}
-    //     {category === 'back' && <IconStacks stacks={stacks} />}
-    //     <span className="skills">{`Habilidades: ${skills}`}</span>
-    //   </div>
-
-    //   <div className="container-left">
-    //     <p>{description}</p>
-    //     <div className="div-buttons">
-    //       <button onClick={this.handleOnClick} name="code">
-    //         Ver Código
-    //       </button>
-    //       {urlApication !== '' && (
-    //         <button onClick={this.handleOnClick} name="application">
-    //           Ver Aplicação
-    //         </button>
-    //       )}
-    //     </div>
-    //     <div className="div-progress">
-    //       {keys.map((key, index) => (
-    //         <LanguageProgress tec={key} value={values[index]} />
-    //       ))}
-    //     </div>
-    //   </div>
-    // </div>
+      <ContainerProjectsDetails>
+        <Title color={ color }>{ name }</Title>
+        <p>{description}</p>
+        <GifContainer className={ css(styles.animation) }>
+          {category === 'front' && (
+            <img src={ gif } alt={ `gif da aplicação ${name}` } />
+          )}
+          {category === 'back' && <IconStacks stacks={ stacks } />}
+        </GifContainer>
+        <div className="container-left">
+          {/* <div className="div-buttons">
+            <button name="code">
+              Ver Código
+            </button>
+            {urlApication !== '' && (
+              <button name="application">
+                Ver Aplicação
+              </button>
+            )}
+          </div> */}
+          {/* <div className="div-progress">
+            {processNames.map((key, index) => (
+              // eslint-disable-next-line react/jsx-key
+              <LanguageProgress tec={ key } value={ values[index] } />
+            ))}
+          </div> */}
+        </div>
+      </ContainerProjectsDetails>
     );
   }
 }

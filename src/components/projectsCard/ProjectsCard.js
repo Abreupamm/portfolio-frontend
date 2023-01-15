@@ -1,18 +1,9 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
 import { ProjectCardsContainer, Stacks, ProjectsName } from './style';
+import handleColorBackground from '../../utils/handleColorBackground';
 
 class ProjectsCard extends Component {
-  handleColor = () => {
-    const list = [
-      'linear-gradient(to right, #c1f, #70e)',
-      'linear-gradient(to bottom, #fa0, #f20)',
-      'linear-gradient(to bottom, #fd0, #f90)',
-    ];
-    const indexRandom = Math.floor(Math.random() * list.length);
-    return list[indexRandom];
-  };
-
   handleClick = () => {
     const { history, data: { id } } = this.props;
     history.push(`/projects-details/${id}`);
@@ -24,7 +15,7 @@ class ProjectsCard extends Component {
     } = this.props;
     return (
       <ProjectCardsContainer onClick={ this.handleClick }>
-        <ProjectsName color={ this.handleColor }>{name}</ProjectsName>
+        <ProjectsName color={ handleColorBackground }>{name}</ProjectsName>
         <p>{skills}</p>
         <div>
           {stacks.map((stack, index) => (
