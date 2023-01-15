@@ -37,6 +37,7 @@ const data = [
     stacks: ['javascript', 'css', 'html'],
     skills: 'Manipular o DOM, eventos e LocalStorange com javascript',
     category: 'front',
+    visible: true,
   },
   {
     id: 2,
@@ -52,6 +53,7 @@ const data = [
     stacks: ['javascript', 'css', 'html'],
     skills: 'Manipular o DOM, eventos e LocalStorange com javascript',
     category: 'front',
+    visible: true,
   },
   {
     id: 3,
@@ -99,6 +101,7 @@ const data = [
     stacks: ['react', 'css', 'javascript'],
     skills: 'Conceitos de React Router e lifecycle-methods',
     category: 'front',
+    visible: true,
   },
   {
     id: 6,
@@ -193,6 +196,7 @@ const data = [
     skills:
       'Subir o banco utilizando docker e construir queries para fazer buscas, alterações, e deletar informações do banco de dados.',
     category: 'back',
+    visible: true,
   },
 ];
 

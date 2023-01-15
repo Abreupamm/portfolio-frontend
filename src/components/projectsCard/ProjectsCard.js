@@ -1,6 +1,6 @@
 import { Component } from 'react';
-import { zoomInDown } from 'react-animations';
-import { StyleSheet, css } from 'aphrodite';
+// import { zoomInDown } from 'react-animations';
+// import { StyleSheet, css } from 'aphrodite';
 import PropTypes from 'prop-types';
 import { ProjectCardsContainer, Stacks, ProjectsName } from './style';
 
@@ -19,16 +19,14 @@ class ProjectsCard extends Component {
     const {
       data: { name, stacks, skills },
     } = this.props;
-    const styles = StyleSheet.create({
-      styleAnimation: {
-        animationName: zoomInDown,
-        animationDuration: '4s',
-      },
-    });
+    // const styles = StyleSheet.create({
+    //   styleAnimation: {
+    //     animationName: zoomInDown,
+    //     animationDuration: '4s',
+    //   },
+    // });
     return (
-      <ProjectCardsContainer
-        className={ `container-projects ${css(styles.styleAnimation)}` }
-      >
+      <ProjectCardsContainer>
         <ProjectsName color={ this.handleColor }>{name}</ProjectsName>
         <p>{skills}</p>
         <div>

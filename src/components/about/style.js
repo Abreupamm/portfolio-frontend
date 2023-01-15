@@ -5,16 +5,14 @@ export const TextHighlight = styled.span`
 `;
 
 export const AboutContainer = styled.div`
-  position: absolute;
-  z-index: 1;
   color: white;
 `;
 
 export const Presentation = styled.div`
   width: 80%;
   margin: 0 auto;
-  margin-top: 5%;
-  margin-bottom: 20%;
+  padding-top: 60px;
+  margin-bottom: 10%;
   color: white;
  
   h1 {

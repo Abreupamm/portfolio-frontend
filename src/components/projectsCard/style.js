@@ -6,9 +6,15 @@ export const ProjectCardsContainer = styled.a`
   color: white;
   width: 250px;
   font-family: 'IBMPlexMonoItalic', monospace;
+  margin: 20px;
+  box-shadow: 5px 10px 10px #000;
   :hover{
-    width: 280px;
-  }
+      span {
+        padding-left: 60px;
+        transition: all 0.5s ease;
+      }
+    }      
+
   p {
     display: block;
     margin: 15px auto;
@@ -21,8 +27,8 @@ export const ProjectCardsContainer = styled.a`
   div {
     display: flex;
     justify-content: space-around;
-    background-color: #202020;;
-    opacity: 0.8;
+    background-color: #181818;;
+    opacity: 0.9;
     height: 18px;
     align-items: center;
   }
@@ -33,14 +39,10 @@ export const ProjectsName = styled.span`
   color: #000;
   border-radius: 0 15% 0 0;
   padding: 5px;
-  /* font-family: 'Rubik', sans-serif; */
   font-weight: 600;
   background: ${(props) => props.color};
-  /* background: linear-gradient(to bottom, #fa0, #f20); */
-  /* background: linear-gradient(to right, #c1f, #70e); */
-  /* background: linear-gradient(to bottom, #fd0, #f90); */
 `;
 
-export const Stacks = styled.span`
+export const Stacks = styled.div`
   font-size: 10px;
 `;
