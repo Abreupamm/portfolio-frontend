@@ -10,9 +10,7 @@ export const ContainerProjectsDetails = styled.div`
   p {
     display: inline-block;
     font-family: 'Rubik', sans-serif;
-    /* border: solid red 1px; */
     width: 40%;
-    /* height: 25%; */
     font-size: 20px;
     line-height: 30px;
     margin-left: 25px;
@@ -22,7 +20,6 @@ export const ContainerProjectsDetails = styled.div`
 export const Title = styled.h1`
    font-family: 'IBMPlexMonoItalic', monospace;
    font-size: 50px;
-   /* font-family: 'Rubik', sans-serif; */
    font-weight: 500;
    background: ${(props) => props.color};
   -webkit-background-clip: text;
@@ -46,4 +43,14 @@ export const GifContainer = styled.div`
   h3 {
     font-family: 'IBMPlexMonoItalic', monospace;
   }
+`;
+
+export const ButtonRedirect = styled.button`
+  background: ${(props) => props.color};
+  font-family: 'IBMPlexMonoItalic', monospace;
+  font-weight: 900;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 20px;
+  font-size: 15px;
 `;

@@ -10,8 +10,13 @@ import Loading from '../../components/Loading';
 import data from '../../utils/projectsList';
 // import LanguageProgress from '../../components/LanguageProgress';
 import createCalcProgress from '../../utils/createCalcProgress';
-import { ContainerProjectsDetails, Title, GifContainer } from './style';
 import handleColorBackground from '../../utils/handleColorBackground';
+import {
+  ContainerProjectsDetails,
+  Title,
+  GifContainer,
+  ButtonRedirect,
+} from './style';
 
 class ProjectsDetails extends Component {
   state = {
@@ -64,7 +69,7 @@ class ProjectsDetails extends Component {
         category,
         stacks,
         description,
-        // urlApication,
+        urlApication,
         // processNames,
         gif,
       },
@@ -99,18 +104,18 @@ class ProjectsDetails extends Component {
               <IconStacks stacks={ stacks } />
             </>
           )}
+          <ButtonRedirect color={ color } name="code">
+            Código
+          </ButtonRedirect>
+          {urlApication !== '' && (
+            <ButtonRedirect color={ color } name="application">
+              Aplicação
+            </ButtonRedirect>
+          )}
         </GifContainer>
         <div className="container-left">
-          {/* <div className="div-buttons">
-            <button name="code">
-              Ver Código
-            </button>
-            {urlApication !== '' && (
-              <button name="application">
-                Ver Aplicação
-              </button>
-            )}
-          </div> */}
+          {/* <div className="div-buttons"> */}
+          {/* </div> */}
           {/* <div className="div-progress">
             {processNames.map((key, index) => (
               // eslint-disable-next-line react/jsx-key
