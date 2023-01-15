@@ -22,11 +22,20 @@ export const ProjectsContainer = styled.div`
   opacity: 0.9;
   border: solid #202020 4px;
 
+  h2 {
+    text-align: center;
+    margin-top: 45px;
+    font-size: 35px;
+  }
+
   button {
+    display: block;
     background-color: #2e0;
     width: 120px;
     box-shadow: 10px 10px 10px #000;
-    margin-bottom: 290px;
+    margin: 25px auto;
+    border-radius: 20px;
+    font-weight: 600;
   }
 `;
 
