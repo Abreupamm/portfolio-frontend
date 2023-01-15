@@ -39,7 +39,6 @@ export const GifContainer = styled.div`
   width: 50%;
   display: flex;
   flex-wrap: wrap;
-  align-content: stretch;
   justify-content: center;
 
   img {

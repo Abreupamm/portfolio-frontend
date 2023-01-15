@@ -29,7 +29,7 @@ class ProjectsCard extends Component {
 
 ProjectsCard.propTypes = {
   data: PropTypes.shape({
-    stacks: PropTypes.oneOf([Array]).isRequired,
+    stacks: PropTypes.arrayOf(PropTypes.string).isRequired,
     name: PropTypes.string.isRequired,
     skills: PropTypes.string.isRequired,
     id: PropTypes.number.isRequired,

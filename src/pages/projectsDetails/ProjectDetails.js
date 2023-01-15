@@ -5,7 +5,7 @@
 import { Component } from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import { fadeInDownBig } from 'react-animations';
-import IconStacks from '../../components/IconStacks';
+import IconStacks from '../../components/iconStacks/IconStacks';
 import Loading from '../../components/Loading';
 import data from '../../utils/projectsList';
 // import LanguageProgress from '../../components/LanguageProgress';
