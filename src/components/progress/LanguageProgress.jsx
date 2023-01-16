@@ -1,24 +1,26 @@
+/* eslint-disable react/prop-types */
 import { Component } from 'react';
 import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
-import '../CSS/components/languageProgress.css';
+import { StyleContainer } from './style';
 
 class LanguageProgress extends Component {
   state = {
     valueStart: 0,
   };
-  componentDidMount = () => {
+
+  componentDidMount() {
     const { value } = this.props;
     setTimeout(() => {
       this.setState({ valueStart: value });
     }, '1100');
-  };
+  }
+
   render() {
     const { valueStart } = this.state;
     const { tec } = this.props;
     const styleProgressBar = {
       path: {
-        stroke: `rgba(167, 0, 194, 100%)`,
+        stroke: '#a8f',
         transition: 'stroke-dashoffset 0.9s ease 0s',
       },
       trail: {
@@ -30,15 +32,15 @@ class LanguageProgress extends Component {
     };
 
     return (
-      <div className="container-progress">
+      <StyleContainer>
         <CircularProgressbarWithChildren
-          styles={styleProgressBar}
-          value={valueStart}
+          styles={ styleProgressBar }
+          value={ valueStart }
         >
           <strong>{`${valueStart}%`}</strong>
           <span>{tec}</span>
         </CircularProgressbarWithChildren>
-      </div>
+      </StyleContainer>
     );
   }
 }

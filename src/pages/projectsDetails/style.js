@@ -40,6 +40,7 @@ export const GifContainer = styled.div`
   img {
     width: 100%;
   }
+
   h3 {
     font-family: 'IBMPlexMonoItalic', monospace;
   }
@@ -49,8 +50,21 @@ export const ButtonRedirect = styled.button`
   background: ${(props) => props.color};
   font-family: 'IBMPlexMonoItalic', monospace;
   font-weight: 900;
+  width: 120px;
+  height: 35px;
   padding: 5px;
   border-radius: 10px;
-  margin: 20px;
+  margin: 40px;
   font-size: 15px;
+
+  :hover {
+    font-size: 18px;
+  }
+`;
+
+export const StyleProgress = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin-top: 10px;
 `;

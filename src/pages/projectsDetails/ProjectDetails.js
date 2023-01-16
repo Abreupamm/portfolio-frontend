@@ -1,14 +1,13 @@
-/* eslint-disable indent */
-/* eslint-disable react/no-unused-class-component-methods */
+/* eslint-disable react/forbid-prop-types */
 /* eslint-disable react/prop-types */
-/* eslint-disable react/no-unused-state */
 import { Component } from 'react';
+import PropTypes from 'prop-types';
 import { StyleSheet, css } from 'aphrodite';
 import { fadeInDownBig } from 'react-animations';
 import IconStacks from '../../components/iconStacks/IconStacks';
 import Loading from '../../components/Loading';
 import data from '../../utils/projectsList';
-// import LanguageProgress from '../../components/LanguageProgress';
+import LanguageProgress from '../../components/progress/LanguageProgress';
 import createCalcProgress from '../../utils/createCalcProgress';
 import handleColorBackground from '../../utils/handleColorBackground';
 import {
@@ -16,13 +15,14 @@ import {
   Title,
   GifContainer,
   ButtonRedirect,
+  StyleProgress,
 } from './style';
 
 class ProjectsDetails extends Component {
   state = {
     loading: false,
     values: [],
-    processNames: [],
+    progressNames: [],
     project: [],
     color: '',
   };
@@ -41,7 +41,7 @@ class ProjectsDetails extends Component {
       projectData[0].projectName,
     );
     this.setState({
-      processNames: keys,
+      progressNames: keys,
       values,
       color: handleColorBackground(),
     });
@@ -51,28 +51,22 @@ class ProjectsDetails extends Component {
     }, time);
   }
 
-  // handleOnClick = ({ target }) => {
-  //   let url;
-  //   const { urlGitHub, urlApication } = this.state;
-  //   target.name === 'code' ? (url = urlGitHub) : (url = urlApication);
-  //   window.location.replace(url);
-  // };
+  handleOnClick = ({ target }) => {
+    const {
+      project: { urlGitHub, urlApication },
+    } = this.state;
+    let url = urlApication;
+    if (target.name === 'code') url = urlGitHub;
+    window.location.replace(url);
+  };
 
   render() {
-    // const { history } = this.props;
-
     const {
       loading,
       color,
-      project: {
-        name,
-        category,
-        stacks,
-        description,
-        urlApication,
-        // processNames,
-        gif,
-      },
+      progressNames,
+      values,
+      project: { name, category, stacks, description, urlApication, gif },
     } = this.state;
 
     if (loading) {
@@ -94,6 +88,7 @@ class ProjectsDetails extends Component {
       <ContainerProjectsDetails>
         <Title color={ color }>{name}</Title>
         <p>{description}</p>
+
         <GifContainer color={ color } className={ css(styles.animation) }>
           {category === 'front' && (
             <img src={ gif } alt={ `gif da aplicação ${name}` } />
@@ -104,28 +99,43 @@ class ProjectsDetails extends Component {
               <IconStacks stacks={ stacks } />
             </>
           )}
-          <ButtonRedirect color={ color } name="code">
+
+          <ButtonRedirect
+            onClick={ this.handleOnClick }
+            color={ color }
+            name="code"
+          >
             Código
           </ButtonRedirect>
+
           {urlApication !== '' && (
-            <ButtonRedirect color={ color } name="application">
+            <ButtonRedirect
+              onClick={ this.handleOnClick }
+              color={ color }
+              name="application"
+            >
               Aplicação
             </ButtonRedirect>
           )}
         </GifContainer>
-        <div className="container-left">
-          {/* <div className="div-buttons"> */}
-          {/* </div> */}
-          {/* <div className="div-progress">
-            {processNames.map((key, index) => (
-              // eslint-disable-next-line react/jsx-key
-              <LanguageProgress tec={ key } value={ values[index] } />
-            ))}
-          </div> */}
-        </div>
+        <StyleProgress>
+          {progressNames.map((progress, index) => (
+            <LanguageProgress
+              key={ index }
+              tec={ progress }
+              value={ values[index] }
+            />
+          ))}
+        </StyleProgress>
       </ContainerProjectsDetails>
     );
   }
 }
+
+ProjectsDetails.propsTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.object.isRequired,
+  }).isRequired,
+};
 
 export default ProjectsDetails;
