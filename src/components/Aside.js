@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Component } from 'react';
 import '../CSS/components/aside.css';
 import IconAside from './IconAside';
@@ -16,37 +17,37 @@ class Aside extends Component {
           className="icon-home"
           page="home"
           name="Início"
-          urlIcon={iconHome}
-          history={history}
+          urlIcon={ iconHome }
+          history={ history }
         />
         <IconAside
           className="icon-about"
           page="about-me"
           name="Sobre Mim"
-          urlIcon={iconAbout}
-          history={history}
+          urlIcon={ iconAbout }
+          history={ history }
         />
         <IconAside
           className="icon-back"
           page="projects-backend"
           name="Projetos BackEnd"
-          urlIcon={iconBack}
-          history={history}
+          urlIcon={ iconBack }
+          history={ history }
         />
         <IconAside
           className="icon-front"
           page="projects-frontend"
           name="Projetos FrontEnd"
-          urlIcon={iconFront}
-          history={history}
+          urlIcon={ iconFront }
+          history={ history }
         />
 
         <IconAside
           className="icon-contact"
           page="contact"
           name="Contato"
-          urlIcon={iconCont}
-          history={history}
+          urlIcon={ iconCont }
+          history={ history }
         />
       </div>
     );

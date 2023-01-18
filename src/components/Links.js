@@ -5,29 +5,26 @@ import '../CSS/components/links.css';
 
 class Links extends Component {
   handleOnClick = ({ target: { alt } }) => {
-    alt === 'icon github'
-      ? window.location.replace('https://github.com/Abreupamm')
-      : window.location.replace(
-          'https://www.linkedin.com/in/pamela-silva-de-abreu/'
-        );
+    if (alt === 'icon github') return window.location.replace('https://github.com/Abreupamm');
+    return window.location.replace('https://www.linkedin.com/in/pamela-silva-de-abreu/');
   };
 
   render() {
     return (
-      < div className='container-links-redes'>
+      <div className="container-links-redes">
         <input
           className="links-redes"
           type="image"
           alt="icon github"
-          src={iconGitHub}
-          onClick={this.handleOnClick}
+          src={ iconGitHub }
+          onClick={ this.handleOnClick }
         />
         <input
           className="links-redes"
           type="image"
           alt="icon linkedin"
-          src={iconLinkedin}
-          onClick={this.handleOnClick}
+          src={ iconLinkedin }
+          onClick={ this.handleOnClick }
         />
       </div>
     );

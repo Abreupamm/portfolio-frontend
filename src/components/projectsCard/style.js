@@ -8,7 +8,6 @@ export const ProjectCardsContainer = styled.div`
   font-family: 'IBMPlexMonoItalic', monospace;
   margin: 20px;
   box-shadow: 5px 10px 10px #000;
-  border: red solid 1px;
   :hover{
       span {
         padding-left: 60px;

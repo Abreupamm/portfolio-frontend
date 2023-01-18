@@ -66,5 +66,5 @@ export const StyleProgress = styled.div`
   display: flex;
   justify-content: space-between;
   width: 40%;
-  margin-top: 10px;
+  margin: 10px;
 `;

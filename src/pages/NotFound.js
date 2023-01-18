@@ -12,17 +12,17 @@ class NotFound extends React.Component {
     const styleImg = {
       display: 'block',
       margin: '0 auto',
-      width: '30%'
+      width: '30%',
     };
 
     const styleText = {
-      color: " #ded5df",
+      color: ' #ded5df',
       'font-family': 'Nunito, sans-serif',
-    }
+    };
     return (
-      <div style={stylePage}>
-        <img alt="icon not found" src={iconNotFound} style={styleImg} />
-        <h3 style={styleText}>PÁGINA NÃO ENCONTRADA</h3>
+      <div style={ stylePage }>
+        <img alt="icon not found" src={ iconNotFound } style={ styleImg } />
+        <h3 style={ styleText }>PÁGINA NÃO ENCONTRADA</h3>
       </div>
     );
   }

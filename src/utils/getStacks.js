@@ -10,4 +10,4 @@ export const getStacksImage = {
   mongodb: 'https://img.icons8.com/color/512/mongodb.png',
   express: 'https://upload.wikimedia.org/wikipedia/en/thumb/7/7e/Express_Clothing_Logo.SVG/1200px-Express_Clothing_Logo.SVG.png',
   restApi: 'https://doc.lucidworks.com/assets/images/logos/datasources/rest-api-logo.png',
-}
+};

@@ -12,18 +12,29 @@ export const Presentation = styled.div`
   width: 80%;
   margin: 0 auto;
   padding-top: 60px;
-  margin-bottom: 10%;
+  height: 320px;
   color: white;
+  padding-top: 100px;
  
   h1 {
-    color: #a8f;
-    font-family: 'Rubik', sans-serif;
     font-size: 90px;
-    margin-left: 8%;
+    margin-left: 10%;
   }
 
+  h2 {
+    display: inline;
+    font-size: 70px;
+    margin-left: 15%;
+  }
+
+  h1, h2 {
+    color: #a8f;
+    font-family: 'Rubik', sans-serif;
+  }
+  
   span,
   h3 {
+    display: inline;
     font-family: 'IBMPlexMonoItalic', monospace;
   }
 
