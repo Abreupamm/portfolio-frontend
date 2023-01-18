@@ -3,6 +3,7 @@ import { BackgroundContainer, ProjectsContainer, Container } from './style';
 import AboutMe from '../../components/about/AboutMe';
 import ProjectsCard from '../../components/projectsCard/ProjectsCard';
 import data from '../../utils/projectsList';
+import Contact from '../../components/contact/Contacts';
 
 class Home extends Component {
   state = {
@@ -52,6 +53,7 @@ class Home extends Component {
             </Container>
             <button onClick={ this.handleClick }>{ buttonName }</button>
           </ProjectsContainer>
+          <Contact />
         </div>
       </>
     );
