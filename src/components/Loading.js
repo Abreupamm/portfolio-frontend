@@ -14,7 +14,7 @@ class Loading extends Component {
       >
         <ReactLoading
           type="spinningBubbles"
-          color="#a700c2"
+          color="#a8f"
           height={ 300 }
           width={ 150 }
         />

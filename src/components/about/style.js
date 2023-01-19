@@ -51,10 +51,10 @@ export const Presentation = styled.div`
 
 export const Description = styled.div`
   background-color: #000;
-  padding: 2%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 60px 2%;
 
   img {
     width: 35%;
@@ -63,7 +63,12 @@ export const Description = styled.div`
 
 export const ParagraphContainer = styled.div`
   width: 60%;
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Rubik', sans-serif;
-  line-height: 18pt;
+  line-height: 23pt;
+  opacity: 0.8;
+
+  p {
+    margin: 25px 0;
+  }
 `;

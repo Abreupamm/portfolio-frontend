@@ -68,7 +68,7 @@ class AboutMe extends Component {
               Nesse pouco tempo, já aprendi muito e sei que ainda tenho
               <TextHighlight color="#a8f"> MUITO </TextHighlight>
               a aprender. Meu
-              objetivo é continuar buscando me desenvolver na prática, fazendo
+              objetivo é continuar meu desenvolvimento na prática, fazendo
               parte de uma empresa onde colaboração, diversidade e pessoas façam
               parte de seus valores.
             </p>
