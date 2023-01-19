@@ -21,6 +21,7 @@ export const ProjectsContainer = styled.div`
   background-color: #202020;
   opacity: 0.9;
   border: solid #202020 4px;
+  padding: 60px 0;
 
   h2 {
     text-align: center;

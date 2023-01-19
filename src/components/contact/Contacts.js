@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import emailjs from '@emailjs/browser';
 import {
   ContactContainerStyle,
   TextAreaStyle,
@@ -27,12 +28,26 @@ class Contact extends Component {
       return;
     }
 
-    this.setState({
-      nome: '',
-      email: '',
-      message: '',
-      submit: true,
-    });
+    const templateParams = {
+      from_name: nome,
+      email,
+      message,
+    };
+
+    emailjs.send(
+      'service_werfjhu',
+      'template_q832lmh',
+      templateParams,
+      'gdGaFpCHxeNWn8Q8P',
+    ).then(() => {
+      this.setState({
+        submit: true,
+        nome: '',
+        email: '',
+        message: '',
+      });
+    })
+      .catch(() => { alert('Algo deu errado, tente novamente por favor!'); });
   };
 
   render() {
