@@ -1,7 +1,6 @@
 import { Component } from 'react';
-import iconGitHub from '../images/github.png';
-import iconLinkedin from '../images/linkedin.png';
-import '../CSS/components/links.css';
+import iconGitHub from '../../images/github.png';
+import iconLinkedin from '../../images/linkedin.png';
 
 class Links extends Component {
   handleOnClick = ({ target: { alt } }) => {
