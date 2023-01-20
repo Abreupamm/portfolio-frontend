@@ -4,6 +4,7 @@ import AboutMe from '../../components/about/AboutMe';
 import ProjectsCard from '../../components/projectsCard/ProjectsCard';
 import data from '../../utils/projectsList';
 import Contact from '../../components/contact/Contacts';
+import Footer from '../../components/footer/Footer';
 
 class Home extends Component {
   state = {
@@ -54,6 +55,7 @@ class Home extends Component {
             <button onClick={ this.handleClick }>{ buttonName }</button>
           </ProjectsContainer>
           <Contact />
+          <Footer />
         </div>
       </>
     );

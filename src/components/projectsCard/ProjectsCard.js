@@ -7,6 +7,7 @@ class ProjectsCard extends Component {
   handleClick = () => {
     const { history, data: { id } } = this.props;
     history.push(`/projects-details/${id}`);
+    window.scrollTo(0, 0);
   };
 
   render() {
