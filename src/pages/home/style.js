@@ -6,7 +6,6 @@ export const BackgroundContainer = styled.div`
   position: fixed;
   z-index: -2;
   background-color: #000;
-  /* opacity: 0.8; */
 
   img {
     width: 100%;
@@ -26,17 +25,24 @@ export const ProjectsContainer = styled.div`
   h2 {
     text-align: center;
     margin-top: 45px;
-    font-size: 35px;
+    font-size: 90px;
   }
 
   button {
     display: block;
     background-color: #2e0;
-    width: 120px;
+    width: 220px;
+    height: 50px;
+    font-size: 23px;
     box-shadow: 10px 10px 10px #000;
     margin: 25px auto;
     border-radius: 20px;
     font-weight: 600;
+
+    :hover {
+      width: 225px;
+      font-size: 26px;
+    }
   }
 `;
 
