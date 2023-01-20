@@ -1,19 +1,19 @@
 import styled from 'styled-components';
 
 export const ContainerProjectsDetails = styled.div`
-  height: 1000px;
+  min-height: 1000px;
   background-color: #000;
   color: white;
-  padding: 10px 20px;
+  padding: 40px 30px;
   opacity: 0.9;
 
   p {
     font-family: 'Rubik', sans-serif;
     width: 80%;
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 35px;
+    line-height: 45px;
     margin-left: 25px;
-    margin-top: 35px;
+    margin-top: 45px;
   }
 `;
 
@@ -21,7 +21,7 @@ export const Title = styled.h1`
   width: 50%;
   font-family: 'IBMPlexMonoItalic', monospace;
   margin-left: 20px;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 500;
   background: ${(props) => props.color};
   -webkit-background-clip: text;
@@ -49,23 +49,23 @@ export const ButtonRedirect = styled.button`
   background: ${(props) => props.color};
   font-family: 'IBMPlexMonoItalic', monospace;
   font-weight: 900;
-  width: 120px;
-  height: 35px;
+  width: 220px;
+  font-size: 22px;
+  height: 45px;
   padding: 5px;
   border-radius: 10px;
   margin: 40px;
-  font-size: 15px;
 
   :hover {
-    font-size: 18px;
+    font-size: 25px;
   }
 `;
 
 export const StyleProgress = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 30%;
   position: absolute;
-  top: 50px;
-  right: 20%;
+  top: 80px;
+  left: 40%;
 `;

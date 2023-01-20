@@ -5,6 +5,7 @@ import {
   TextAreaStyle,
   ButtonStyle,
   InputStyle,
+  ResponseStyle,
 } from './style';
 
 class Contact extends Component {
@@ -13,6 +14,8 @@ class Contact extends Component {
     email: '',
     message: '',
     submit: false,
+    response: 'Mensagem enviada. Obrigada!',
+    color: '#2e0',
   };
 
   handleOnChenge = ({ target: { value, name } }) => {
@@ -24,7 +27,10 @@ class Contact extends Component {
     const { nome, email, message } = this.state;
 
     if (nome === '' || email === '' || message === '') {
-      alert('Por favor, preencha todos os campos!');
+      this.setState({
+        submit: true,
+        response: 'Por favor, preencha todos os campos!',
+        color: '#d41900' });
       return;
     }
 
@@ -47,16 +53,21 @@ class Contact extends Component {
         message: '',
       });
     })
-      .catch(() => { alert('Algo deu errado, tente novamente por favor!'); });
+      .catch(() => {
+        this.setState({
+          submit: true,
+          response: 'Algo deu errado, tente novamente por favor!',
+          color: '#d41900' });
+      });
   };
 
   render() {
-    const { nome, email, message, submit } = this.state;
+    const { nome, email, message, submit, response, color } = this.state;
     return (
       <ContactContainerStyle>
         <h1>Contato</h1>
         {
-          submit && <span>Mensagem enviada. Obrigada!</span>
+          submit && <ResponseStyle color={ color }>{response}</ResponseStyle>
         }
         <form onSubmit={ this.handleOnSubmit }>
           <InputStyle

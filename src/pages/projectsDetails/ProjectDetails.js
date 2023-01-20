@@ -29,7 +29,7 @@ class ProjectsDetails extends Component {
   };
 
   async componentDidMount() {
-    // this.setState({ loading: true });
+    this.setState({ loading: true });
     const {
       match: {
         params: { id },
