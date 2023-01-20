@@ -9,7 +9,7 @@ export const AboutContainer = styled.div`
 `;
 
 export const Presentation = styled.div`
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   padding-top: 60px;
   height: 320px;
@@ -24,7 +24,7 @@ export const Presentation = styled.div`
   h2 {
     display: inline;
     font-size: 70px;
-    margin-left: 15%;
+    margin-left: 10%;
   }
 
   h1, h2 {
@@ -40,7 +40,7 @@ export const Presentation = styled.div`
 
   h3 {
     margin-left: 40%;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 300;
   }
 
@@ -54,19 +54,22 @@ export const Description = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 2%;
+  flex-wrap: wrap;
+  padding: 60px 0;
 
   img {
-    width: 35%;
+    width: 500px;
+    margin: 0 auto;
   }
 `;
 
 export const ParagraphContainer = styled.div`
   width: 60%;
-  font-size: 20px;
+  font-size: 28px;
   font-family: 'Rubik', sans-serif;
-  line-height: 23pt;
-  opacity: 0.8;
+  line-height: 30pt;
+  opacity: 0.7;
+  margin: 0 auto;
 
   p {
     margin: 25px 0;

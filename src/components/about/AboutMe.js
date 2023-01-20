@@ -21,9 +21,6 @@ class AboutMe extends Component {
             onInit={ (typewriter) => {
               typewriter.typeString('<h2>Olá!</h2>')
                 .typeString('<h2>Meu nome é</h2>')
-                .callFunction(() => {
-                  console.log('String typed out!');
-                })
                 .deleteAll()
                 .pauseFor(paused1)
                 .changeDelay(delay)
