@@ -26,6 +26,7 @@ export const ProjectsContainer = styled.div`
     text-align: center;
     margin-top: 45px;
     font-size: 90px;
+    font-family: 'IBMPlexMonoItalic', monospace; 
   }
 
   button {

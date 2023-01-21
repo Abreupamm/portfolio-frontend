@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import Typewriter from 'typewriter-effect';
 import myImage from '../../images/pamela.jpeg';
+import LinksProfile from '../linksProfile/LinksPrifile';
 import {
   AboutContainer,
   Presentation,
@@ -19,9 +20,10 @@ class AboutMe extends Component {
         <Presentation>
           <Typewriter
             onInit={ (typewriter) => {
-              typewriter.typeString('<h2>Olá!</h2>')
-                .typeString('<h2>Meu nome é</h2>')
-                .deleteAll()
+              typewriter
+                // .typeString('<h2>Olá! </h2>')
+                // .typeString('<h2>Meu nome é</h2>')
+                // .deleteAll()
                 .pauseFor(paused1)
                 .changeDelay(delay)
                 .typeString('<h1> Pamela Abreu </h1>')
@@ -33,6 +35,7 @@ class AboutMe extends Component {
                 .start();
             } }
           />
+          <LinksProfile />
         </Presentation>
         <Description>
           <img alt="Pamela" src={ myImage } />

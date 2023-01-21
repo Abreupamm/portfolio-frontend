@@ -7,7 +7,8 @@ export const ContactContainerStyle = styled.div`
   padding: 30px;
 
   h1 {
-    font-size: 60px;
+    font-size: 70px;
+    font-family: 'IBMPlexMonoItalic', monospace; 
   }
   
   input {

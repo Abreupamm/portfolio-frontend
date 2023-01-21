@@ -1,8 +1,9 @@
 import { Component } from 'react';
 import iconGitHub from '../../images/github.png';
 import iconLinkedin from '../../images/linkedin.png';
+import { ContainerLinks } from './style';
 
-class Links extends Component {
+class LinksProfile extends Component {
   handleOnClick = ({ target: { alt } }) => {
     if (alt === 'icon github') return window.location.replace('https://github.com/Abreupamm');
     return window.location.replace('https://www.linkedin.com/in/pamela-silva-de-abreu/');
@@ -10,24 +11,22 @@ class Links extends Component {
 
   render() {
     return (
-      <div className="container-links-redes">
+      <ContainerLinks>
         <input
-          className="links-redes"
-          type="image"
-          alt="icon github"
-          src={ iconGitHub }
-          onClick={ this.handleOnClick }
-        />
-        <input
-          className="links-redes"
           type="image"
           alt="icon linkedin"
           src={ iconLinkedin }
           onClick={ this.handleOnClick }
         />
-      </div>
+        <input
+          type="image"
+          alt="icon github"
+          src={ iconGitHub }
+          onClick={ this.handleOnClick }
+        />
+      </ContainerLinks>
     );
   }
 }
 
-export default Links;
+export default LinksProfile;

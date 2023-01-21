@@ -23,11 +23,12 @@ export const Presentation = styled.div`
 
   h2 {
     display: inline;
-    font-size: 70px;
-    margin-left: 10%;
+    font-size: 35px;
+    font-weight: 300;
+    font-family: 'IBMPlexMonoItalic', monospace;
   }
 
-  h1, h2 {
+  h1 {
     color: #a8f;
     font-family: 'Rubik', sans-serif;
   }
@@ -45,7 +46,7 @@ export const Presentation = styled.div`
   }
 
   span {
-    font-size: 25px;
+    font-size: 30px;
   }
 `;
 
