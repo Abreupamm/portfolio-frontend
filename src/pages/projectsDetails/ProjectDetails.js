@@ -67,7 +67,7 @@ class ProjectsDetails extends Component {
       color,
       progressNames,
       values,
-      project: { name, category, stacks, description, urlApication, gif },
+      project: { name, stacks, description, urlApication, gif },
     } = this.state;
 
     if (loading) {
@@ -110,10 +110,9 @@ class ProjectsDetails extends Component {
           </>
           <p>{description}</p>
           <GifContainer color={ color } className={ css(styles.animation) }>
-            {category === 'front' && (
+            {gif !== '' ? (
               <img src={ `${gif}` } alt={ `gif da aplicação ${name}` } />
-            )}
-            {category === 'back' && (
+            ) : (
               <>
                 <h3>Stacks utilizadas:</h3>
                 <IconStacks stacks={ stacks } />

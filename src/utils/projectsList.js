@@ -27,8 +27,6 @@ const data = [
     id: 1,
     name: 'Pixels Art',
     projectName: 'pixels-art',
-    image:
-      'https://i.pinimg.com/originals/60/96/24/60962403310debc750aefcff61e075a5.jpg',
     gif: 'https://github.com/Abreupamm/project-pixels-art/raw/pamela-abreu-pixels-art/pixel-art.gif',
     urlGitHub: 'https://github.com/Abreupamm/project-pixels-art',
     urlApication: 'https://abreupamm.github.io/project-pixels-art/',
@@ -43,8 +41,6 @@ const data = [
     id: 2,
     name: 'Lista de Tarefas',
     projectName: 'project-todo-list',
-    image:
-      'https://st2.depositphotos.com/6628792/9630/v/600/depositphotos_96302366-stock-illustration-to-do-list-theme-flat.jpg',
     gif: 'https://github.com/Abreupamm/project-todo-list/raw/pamela-abreu-todo-list/todo-list.gif',
     urlGitHub: 'https://github.com/Abreupamm/project-todo-list',
     urlApication: 'https://abreupamm.github.io/project-todo-list/',
@@ -59,8 +55,6 @@ const data = [
     id: 3,
     name: 'Shopping cart',
     projectName: 'shopping-cart',
-    image:
-      'https://st2.depositphotos.com/4060975/9124/v/600/depositphotos_91245802-stock-illustration-shopping-cart-colored-vector-illustration.jpg',
     gif: 'https://github.com/Abreupamm/project-shopping-cart/raw/main/prototipo.gif',
     urlGitHub: 'https://github.com/Abreupamm/project-shopping-cart',
     urlApication: 'https://abreupamm.github.io/project-shopping-cart/',
@@ -72,11 +66,37 @@ const data = [
     category: 'front',
   },
   {
+    id: 14,
+    name: 'Trybers and Dragons',
+    projectName: '',
+    image: '',
+    gif: '',
+    urlGitHub: 'https://github.com/Abreupamm/trybes-and-dragons',
+    urlApication: '',
+    description: 'Para este projeto, apliquei os princípios da arquitetura SOLID e os princípios de POO em uma estrutura de jogos de interpretação de papéis, mais conhecidos como jogos RPG (Role Playing Game).',
+    stacks: ['node', 'typescript'],
+    skills: 'Arquitetura SOLID e os princípios de POO',
+    category: 'back',
+    visible: true,
+  },
+  {
+    id: 15,
+    name: 'API de Blogs',
+    projectName: '',
+    image: '',
+    gif: '',
+    urlGitHub: 'https://github.com/Abreupamm/trybes-and-dragons',
+    urlApication: '',
+    description: 'Neste projeto desenvolvei uma API e um banco de dados para a produção de conteúdo para um blog! A aplicação roda em Node.js usando o banco de dados MySQL e pacote sequelize para fazer um CRUD de posts.',
+    stacks: ['node', 'javascript', 'mysql', 'sequelize'],
+    skills: 'API e um banco de dados para a produção de conteúdo para um blog!',
+    category: 'back',
+    visible: true,
+  },
+  {
     id: 4,
     name: 'Solar System',
     projectName: 'solar-system',
-    image:
-      'https://static.todamateria.com.br/upload/56/55/5655139e0842d-sistema-solar.jpg?auto_optimize=low',
     gif: '',
     urlGitHub: 'https://github.com/Abreupamm/project-solar-system',
     urlApication: '',
@@ -91,8 +111,6 @@ const data = [
     id: 5,
     name: 'TrybeTunes',
     projectName: 'trybetunes',
-    image:
-      'https://www.pegadesconto.com.br/wp-content/uploads/2020/09/podcast-cafe-chocolate.jpg',
     gif: 'https://github.com/Abreupamm/project-TrybeTunes/raw/main/trybetunes.gif',
     urlGitHub: 'https://github.com/Abreupamm/project-TrybeTunes',
     urlApication: '',
@@ -107,8 +125,6 @@ const data = [
     id: 6,
     name: 'Jogo Trivia',
     projectName: 'trivia',
-    image:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE-P_7XapB5jXY7fSwqceSUNMwdv4gfDVW6zL5hB_kZek_-soF_mQVcPIWBPuNNXz1anc&usqp=CAU',
     gif: 'https://github.com/Abreupamm/jogo-trivia/raw/main/trivia.gif',
     urlGitHub: 'https://github.com/Abreupamm/jogo-trivia',
     urlApication: '',
@@ -123,8 +139,6 @@ const data = [
     id: 7,
     name: 'TrybeWallet',
     projectName: 'trybewallet',
-    image:
-      'https://img.freepik.com/vetores-premium/carteira-com-dinheiro-e-pilha-de-moedas-de-ouro-vector-icon-ilustracao_138676-359.jpg?w=2000',
     gif: 'https://img.freepik.com/vetores-premium/carteira-com-dinheiro-e-pilha-de-moedas-de-ouro-vector-icon-ilustracao_138676-359.jpg?w=2000',
     urlGitHub: 'https://github.com/Abreupamm/project-react-trybewallet',
     urlApication: '',
@@ -139,7 +153,6 @@ const data = [
     id: 8,
     name: 'Docker Todo-List',
     projectName: '',
-    image: 'https://pbs.twimg.com/media/DEavFDzVYAAbxPV.jpg:small',
     gif: '',
     urlGitHub: 'https://github.com/Abreupamm/project-docker-todo-list',
     urlApication: '',
@@ -153,8 +166,6 @@ const data = [
     id: 9,
     name: 'All For One',
     projectName: '',
-    image:
-      'https://www.jogospuzzle.com/imatjes/golfinhos-por-do-sol_4fe44ce00b9d2-p.jpg',
     gif: '',
     urlGitHub: 'https://github.com/Abreupamm/project-mysql-all-for-one',
     urlApication: '',
@@ -169,8 +180,6 @@ const data = [
     id: 10,
     name: 'Talker Manager',
     projectName: '',
-    image:
-      'https://media.istockphoto.com/id/578574238/vector/business-seminar-speaker-doing-presentation-and-professional-training.jpg?s=612x612&w=0&k=20&c=dNC83HBTi2shXlTEz5Gql9OjLz4rYtt0iExQbSQstuQ=',
     gif: '',
     urlGitHub: 'https://github.com/Abreupamm/project-talker-manager',
     urlApication: '',
@@ -185,8 +194,6 @@ const data = [
     id: 11,
     name: 'MongoDB Commerce',
     projectName: '',
-    image:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8qjYQfVCGh2fR7KAZLQ-dN--UyWCzWqO-Ms0jgDp9TWDqhqmYS1T0uZqfH2fhKQ9Tk0s&usqp=CAU',
     gif: '',
     urlGitHub: 'https://github.com/Abreupamm/mongodb-commerce',
     urlApication: '',
@@ -196,6 +203,37 @@ const data = [
     skills:
       'Subir o banco utilizando docker e construir queries para fazer buscas, alterações, e deletar informações do banco de dados.',
     category: 'back',
+    visible: true,
+  },
+  {
+    id: 12,
+    name: 'Trybe Futebol Clube',
+    projectName: '',
+    image: '',
+    gif: '',
+    urlGitHub: 'https://github.com/Abreupamm/project-trybe-futebol-clube',
+    urlApication: '',
+    description:
+      'Nesse projeto, construi um back-end dockerizado utilizando modelagem de dados através do Sequelize. O desenvolvimento respeita as regras de negócio providas no projeto e a API é capaz de ser consumida por um front-end já provido pela Trybe. Para adicionar uma partida foi necessário ter um token, portanto a pessoa deverá estar logada para fazer as alterações. Possuindo um relacionamento entre as tabelas teams e matches para fazer as atualizações das partidas. O back-end implementa regras de negócio para popular adequadamente a tabela disponível no front-end que será exibida para a pessoa usuária do sistema.',
+    stacks: ['typescript', 'docker', 'mysql', 'mocha', 'node', 'sequelize'],
+    skills:
+      'back-end dockerizado utilizando modelagem de dados através do Sequelize. Respeitando as regras de negócio.',
+    category: 'back',
+    visible: true,
+  },
+  {
+    id: 13,
+    name: 'App de receitas',
+    projectName: '',
+    gif: '',
+    urlGitHub: 'https://github.com/Abreupamm/app-receitas',
+    urlApication: '',
+    description:
+      'Foi desenvolvido um app de receitas, utilizando o que há de mais moderno dentro do ecossistema React: Hooks e Context API, além diiso, implementamos casos de testes.Desenvolvi em equipe com a metodologia agile Kanban, realizamos Pair Programming, utilizamos ferramentas como zoom e slack para comunição síncrona e asíncrona. Nele é possível: ver, buscar, filtrar, favoritar e acompanhar o progresso de preparação de receitas e drinks!',
+    stacks: ['javascript', 'react', 'css'],
+    skills:
+      'Utilizar a Context API do React para gerenciar estado, React Hook e requisição a API',
+    category: 'front',
     visible: true,
   },
 ];
