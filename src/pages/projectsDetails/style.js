@@ -67,5 +67,5 @@ export const StyleProgress = styled.div`
   width: 30%;
   position: absolute;
   top: 80px;
-  left: 40%;
+  right: 20%;
 `;

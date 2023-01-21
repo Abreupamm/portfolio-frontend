@@ -58,7 +58,7 @@ class ProjectsDetails extends Component {
     } = this.state;
     let url = urlApication;
     if (target.name === 'code') url = urlGitHub;
-    window.location.replace(url);
+    window.open(url);
   };
 
   render() {

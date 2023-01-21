@@ -5,8 +5,8 @@ import { ContainerLinks } from './style';
 
 class LinksProfile extends Component {
   handleOnClick = ({ target: { alt } }) => {
-    if (alt === 'icon github') return window.location.replace('https://github.com/Abreupamm');
-    return window.location.replace('https://www.linkedin.com/in/pamela-silva-de-abreu/');
+    if (alt === 'icon github') return window.open('https://github.com/Abreupamm');
+    return window.open('https://www.linkedin.com/in/pamela-silva-de-abreu/');
   };
 
   render() {
