@@ -14,8 +14,8 @@ class Contact extends Component {
     email: '',
     message: '',
     submit: false,
-    response: 'Mensagem enviada. Obrigada!',
-    color: '#2e0',
+    response: '',
+    color: '',
   };
 
   handleOnChenge = ({ target: { value, name } }) => {
@@ -25,10 +25,14 @@ class Contact extends Component {
   handleOnSubmit = (e) => {
     e.preventDefault();
     const { nome, email, message } = this.state;
+    this.setState({
+      submit: true,
+      response: 'Enviando ...',
+      color: 'white',
+    });
 
     if (nome === '' || email === '' || message === '') {
       this.setState({
-        submit: true,
         response: 'Por favor, preencha todos os campos!',
         color: '#d41900' });
       return;
@@ -47,15 +51,15 @@ class Contact extends Component {
       'gdGaFpCHxeNWn8Q8P',
     ).then(() => {
       this.setState({
-        submit: true,
         nome: '',
         email: '',
         message: '',
+        response: 'Mensagem enviada. Obrigada!',
+        color: '#2e0',
       });
     })
       .catch(() => {
         this.setState({
-          submit: true,
           response: 'Algo deu errado, tente novamente por favor!',
           color: '#d41900' });
       });
