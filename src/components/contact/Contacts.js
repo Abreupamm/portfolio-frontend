@@ -17,7 +17,7 @@ class Contact extends Component {
     response: '',
     color: '',
   };
-  
+
   handleOnChenge = ({ target: { value, name } }) => {
     this.setState({ [name]: value });
   };
