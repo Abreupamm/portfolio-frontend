@@ -39,7 +39,7 @@ class AboutMe extends Component {
         </Presentation>
         <Description>
           <img alt="Pamela" src={ myImage } />
-          <ParagraphContainer>
+          <ParagraphContainer id="sobre-mim">
             <p>
               Me apaixonei por
               <TextHighlight color="#a8f"> tecnologia </TextHighlight>

@@ -69,7 +69,7 @@ class Contact extends Component {
     const { nome, email, message, submit, response, color } = this.state;
     return (
       <ContactContainerStyle>
-        <h1>Contato</h1>
+        <h1 id="contato">Contato</h1>
         {
           submit && <ResponseStyle color={ color }>{response}</ResponseStyle>
         }

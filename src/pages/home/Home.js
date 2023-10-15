@@ -5,6 +5,7 @@ import ProjectsCard from '../../components/projectsCard/ProjectsCard';
 import data from '../../utils/projectsList';
 import Contact from '../../components/contact/Contacts';
 import Footer from '../../components/footer/Footer';
+import Header from '../../components/header/Header';
 
 class Home extends Component {
   state = {
@@ -38,18 +39,23 @@ class Home extends Component {
     return (
       <>
         <BackgroundContainer>
-          <img
+          {/* <img
             alt=""
             src="https://www.informaticienadomicile.com/wp-content/uploads/2022/02/ecoles-codage-informatique.jpeg"
-          />
+          /> */}
         </BackgroundContainer>
+        <Header />
         <div>
           <AboutMe />
           <ProjectsContainer>
-            <h2>Projetos</h2>
+            <h2 id="projetos">Projetos</h2>
             <Container>
               {projectList.map((project) => (
-                <ProjectsCard history={ history } key={ project.id } data={ project } />
+                <ProjectsCard
+                  history={ history }
+                  key={ project.id }
+                  data={ project }
+                />
               ))}
             </Container>
             <button onClick={ this.handleClick }>{ buttonName }</button>
